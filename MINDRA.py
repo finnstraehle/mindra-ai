@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from openai import OpenAI
+import time
 
 import os
 from dotenv import load_dotenv
@@ -25,6 +26,14 @@ from openai import OpenAI
 st.set_page_config(layout="wide")
 st.title("Interview Knowledge Base Explorer")
 st.write("Diese App ermöglicht es, qualitativ kodierte Interviewdaten zu explorieren, zu analysieren und abzufragen.")
+
+# Eingabe: Frage stellen und Modus wählen
+st.subheader("Frage stellen")
+query = st.text_area("Ihre Frage an die Interview-Daten:", "")
+answer_mode = st.radio(
+    "Antwortmodus", ("Nur deskriptiv (zusammenfassend)", "Interpretierend (mit Empfehlungen)")
+)
+
 
 # OpenAI API-Key über .env laden
 load_dotenv()
@@ -171,56 +180,58 @@ def load_and_clean_data():
         combined = pd.concat([combined, df], ignore_index=True)
     return combined
 
+
 data_df = load_and_clean_data()
 
-# 2. Filter in der Hauptseite (nicht Sidebar)
-# ------------------------------------------
-# Ermöglicht Filterung nach Cluster, Typ, Stichwort (freier Text) und CSV-Datei.
-st.subheader("Filter")
-cluster_options = sorted({c for c in data_df["Cluster"] if c})
-type_options = sorted({t for t in data_df["Typ"] if t})
-file_options = sorted(set(data_df["Datei"]))
+# Filter und Verteilung in expandierbaren Spalten
+col1, col2 = st.columns(2)
+with col1:
+    with st.expander("Filter", expanded=False):
+        cluster_options = sorted({c for c in data_df["Cluster"] if c})
+        type_options = sorted({t for t in data_df["Typ"] if t})
+        file_options = sorted(set(data_df["Datei"]))
 
-selected_clusters = st.multiselect("Cluster auswählen", cluster_options)
-selected_types = st.multiselect("Typ auswählen", type_options)
-selected_files = st.multiselect("Quelle (Datei) auswählen", file_options, default=file_options)
-keyword = st.text_input("Stichwortsuche in Aussagen/Beschreibung")
+        selected_clusters = st.multiselect("Cluster auswählen", cluster_options)
+        selected_types = st.multiselect("Interview Typ auswählen", type_options)
+        selected_files = st.multiselect("Quelle (Datei) auswählen", file_options, default=file_options)
+        keyword = st.text_input("Stichwortsuche in Aussagen/Beschreibung")
 
-# Filter auf DataFrame anwenden
-filtered_df = data_df.copy()
-if selected_clusters:
-    filtered_df = filtered_df[filtered_df["Cluster"].isin(selected_clusters)]
-if selected_types:
-    filtered_df = filtered_df[filtered_df["Typ"].isin(selected_types)]
-if selected_files:
-    filtered_df = filtered_df[filtered_df["Datei"].isin(selected_files)]
-if keyword:
-    kw = keyword.lower()
-    mask = filtered_df["Aussage"].str.lower().str.contains(kw) | filtered_df["Beschreibung"].str.lower().str.contains(kw)
-    filtered_df = filtered_df[mask]
+        # Filter auf DataFrame anwenden
+        filtered_df = data_df.copy()
+        if selected_clusters:
+            filtered_df = filtered_df[filtered_df["Cluster"].isin(selected_clusters)]
+        if selected_types:
+            filtered_df = filtered_df[filtered_df["Typ"].isin(selected_types)]
+        if selected_files:
+            filtered_df = filtered_df[filtered_df["Datei"].isin(selected_files)]
+        if keyword:
+            kw = keyword.lower()
+            mask = (
+                filtered_df["Aussage"].str.lower().str.contains(kw)
+                | filtered_df["Beschreibung"].str.lower().str.contains(kw)
+            )
+            filtered_df = filtered_df[mask]
+with col2:
+    with st.expander("Datenverteilung", expanded=False):
+        if not filtered_df.empty:
+            subcol1, subcol2 = st.columns(2)
+            with subcol1:
+                st.markdown("**Cluster-Verteilung (Anzahl Aussagen)**")
+                cluster_counts = (
+                    filtered_df["Cluster"].replace("", "(kein Cluster)")
+                    .value_counts()
+                )
+                st.bar_chart(cluster_counts)
+            with subcol2:
+                st.markdown("**Typ-Verteilung (Anzahl Aussagen)**")
+                type_counts = (
+                    filtered_df["Typ"].replace("", "(kein Typ)")
+                    .value_counts()
+                )
+                st.bar_chart(type_counts)
+        else:
+            st.write("Keine Daten für ausgewählte Filter.")
 
-# 3. Optionale Visualisierung der Aussagen-Verteilung
-# ---------------------------------------------------
-# (z. B. nach Cluster oder Typ, abhängig vom aktuellen Filter)
-if not filtered_df.empty:
-    st.subheader("Datenverteilung")
-    col1, col2 = st.columns(2)
-    with col1:
-        st.markdown("**Cluster-Verteilung (Anzahl Aussagen)**")
-        cluster_counts = filtered_df["Cluster"].replace("", "(kein Cluster)").value_counts()
-        st.bar_chart(cluster_counts)
-    with col2:
-        st.markdown("**Typ-Verteilung (Anzahl Aussagen)**")
-        type_counts = filtered_df["Typ"].replace("", "(kein Typ)").value_counts()
-        st.bar_chart(type_counts)
-else:
-    st.write("Keine Daten für ausgewählte Filter.")
-
-# 4. Frageingabe und Modusauswahl (deskriptiv vs. interpretierend)
-# --------------------------------------------------------------
-st.subheader("Frage stellen")
-query = st.text_area("Ihre Frage an die Interview-Daten:", "")
-answer_mode = st.radio("Antwortmodus", ("Nur deskriptiv (zusammenfassend)", "Interpretierend (mit Empfehlungen)"))
 
 # 5. Vorbereitung semantische Suche (FAISS Index mit OpenAI Embeddings)
 # --------------------------------------------------------------------
@@ -261,7 +272,7 @@ if st.button("Antwort generieren"):
         st.warning("Für die gewählten Filter sind keine Daten vorhanden.")
     else:
         # Fortschrittsbalken und Statusanzeige initialisieren
-        progress_bar = st.progress(0)
+        progress_bar = st.progress(10)
         status_text = st.info("🤖 AI analysiert Ihre Daten und bereitet die Antwort vor...")
         # FAISS Index erstellen (oder aus Cache laden)
         faiss_index, meta_list, embed_matrix = prepare_faiss_index(filtered_df)
@@ -271,7 +282,7 @@ if st.button("Antwort generieren"):
         # Anfrage-Embedding erzeugen
         try:
             q_response = client.embeddings.create(model="text-embedding-ada-002", input=[query])
-            progress_bar.progress(50)
+            progress_bar.progress(40)
             q_emb = q_response.data[0].embedding
         except Exception as e:
             st.error(f"Fehler bei der Embedding-Erstellung der Frage: {e}")
@@ -280,9 +291,13 @@ if st.button("Antwort generieren"):
         # Query-Vektor normalisieren
         q_vec = q_vec / (np.linalg.norm(q_vec) + 1e-10)
         # Ähnlichste K Dokumente finden
-        K = 5
+        K = 7
         D, I = faiss_index.search(q_vec.reshape(1, -1), K)
-        progress_bar.progress(75)
+        progress_bar.progress(60)
+        time.sleep(2)
+        progress_bar.progress(70)
+        time.sleep(2)
+        progress_bar.progress(80)
         top_indices = I[0]
         # Kontext aus den Top-Ergebnissen zusammenstellen
         context_snippets = []
