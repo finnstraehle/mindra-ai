@@ -1,7 +1,6 @@
 [theme]
-base = "light"
-primaryColor = "#FF20FC"
-secondaryBackgroundColor = "#ffffff"
+base="light"
+primaryColor="#EB6909"
 
 [client]
 showSidebarNavigation = false

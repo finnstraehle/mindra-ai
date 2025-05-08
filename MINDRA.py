@@ -1,10 +1,12 @@
 import streamlit as st
+st.set_page_config(layout="wide")
 import pandas as pd
 import numpy as np
 from openai import OpenAI
 import time
 
 import os
+import base64
 from dotenv import load_dotenv
 
 # OpenAI API-Key über .env laden
@@ -22,9 +24,22 @@ from io import StringIO
 # OpenAI API Client (neu)
 from openai import OpenAI
 
-# Titel und grundlegende Beschreibung der App
-st.set_page_config(layout="wide")
-st.title("Interview Knowledge Base Explorer")
+# Header: logo and title centered
+logo_path = os.path.join(os.path.dirname(__file__), "data", "mindra_logo.png")
+if os.path.isfile(logo_path):
+    # Encode logo for inline HTML
+    logo_bytes = open(logo_path, "rb").read()
+    logo_b64 = base64.b64encode(logo_bytes).decode()
+    html_header = f"""
+    <div style="text-align:center; margin-bottom:100px;">
+      <img src="data:image/png;base64,{logo_b64}" width="160" style="margin-bottom:0px;" />
+      <h1 font-size:2rem;">MINDRA – Interview Knowledge Base Explorer</h1>
+    </div>
+    """
+    st.markdown(html_header, unsafe_allow_html=True)
+else:
+    st.warning("Logo 'mindra_logo.png' nicht gefunden.")
+
 st.write("Diese App ermöglicht es, qualitativ kodierte Interviewdaten zu explorieren, zu analysieren und abzufragen.")
 
 # Eingabe: Frage stellen und Modus wählen
