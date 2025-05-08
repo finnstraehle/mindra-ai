@@ -22,6 +22,7 @@ from io import StringIO
 from openai import OpenAI
 
 # Titel und grundlegende Beschreibung der App
+st.set_page_config(layout="wide")
 st.title("Interview Knowledge Base Explorer")
 st.write("Diese App ermöglicht es, qualitativ kodierte Interviewdaten zu explorieren, zu analysieren und abzufragen.")
 
@@ -36,9 +37,7 @@ if not openai_api_key:
 # OpenAI Python v1 Client initialisieren
 client = OpenAI(api_key=openai_api_key)
 
-# 1. Daten einlesen und bereinigen
-# -------------------------------
-# Lese die sieben CSV-Dateien ein und stelle sicher, dass sie eine konsistente Struktur haben.
+# Daten einlesen und bereinigen
 # Spalten: NR, Rolle, Firma, Typ, Cluster, Beschreibung, Aussage, Quelle (jede Zeile = eine Aussage).
 @st.cache_data(show_spinner=False)
 def load_and_clean_data():
@@ -55,7 +54,7 @@ def load_and_clean_data():
     for label, filename in files.items():
         try:
             # CSV einlesen; dtype=str sorgt dafür, dass alles als Text gelesen wird
-            data_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'))
+            data_path = os.path.abspath(os.path.join(os.getcwd(), 'data'))
             df = pd.read_csv(os.path.join(data_path, filename), dtype=str, keep_default_na=False, engine='python')
         except Exception as e:
             st.error(f"Fehler beim Lesen von {filename}: {e}")
@@ -203,19 +202,19 @@ if keyword:
 # 3. Optionale Visualisierung der Aussagen-Verteilung
 # ---------------------------------------------------
 # (z. B. nach Cluster oder Typ, abhängig vom aktuellen Filter)
-with st.expander("Datenverteilung anzeigen (Cluster/Typ Häufigkeit)"):
-    if not filtered_df.empty:
-        col1, col2 = st.columns(2)
-        with col1:
-            st.markdown("**Cluster-Verteilung (Anzahl Aussagen)**")
-            cluster_counts = filtered_df["Cluster"].replace("", "(kein Cluster)").value_counts()
-            st.bar_chart(cluster_counts)
-        with col2:
-            st.markdown("**Typ-Verteilung (Anzahl Aussagen)**")
-            type_counts = filtered_df["Typ"].replace("", "(kein Typ)").value_counts()
-            st.bar_chart(type_counts)
-    else:
-        st.write("Keine Daten für ausgewählte Filter.")
+if not filtered_df.empty:
+    st.subheader("Datenverteilung")
+    col1, col2 = st.columns(2)
+    with col1:
+        st.markdown("**Cluster-Verteilung (Anzahl Aussagen)**")
+        cluster_counts = filtered_df["Cluster"].replace("", "(kein Cluster)").value_counts()
+        st.bar_chart(cluster_counts)
+    with col2:
+        st.markdown("**Typ-Verteilung (Anzahl Aussagen)**")
+        type_counts = filtered_df["Typ"].replace("", "(kein Typ)").value_counts()
+        st.bar_chart(type_counts)
+else:
+    st.write("Keine Daten für ausgewählte Filter.")
 
 # 4. Frageingabe und Modusauswahl (deskriptiv vs. interpretierend)
 # --------------------------------------------------------------
@@ -261,13 +260,18 @@ if st.button("Antwort generieren"):
     elif filtered_df.empty:
         st.warning("Für die gewählten Filter sind keine Daten vorhanden.")
     else:
+        # Fortschrittsbalken und Statusanzeige initialisieren
+        progress_bar = st.progress(0)
+        status_text = st.info("🤖 AI analysiert Ihre Daten und bereitet die Antwort vor...")
         # FAISS Index erstellen (oder aus Cache laden)
         faiss_index, meta_list, embed_matrix = prepare_faiss_index(filtered_df)
+        progress_bar.progress(25)
         if faiss_index is None:
             st.stop()
         # Anfrage-Embedding erzeugen
         try:
             q_response = client.embeddings.create(model="text-embedding-ada-002", input=[query])
+            progress_bar.progress(50)
             q_emb = q_response.data[0].embedding
         except Exception as e:
             st.error(f"Fehler bei der Embedding-Erstellung der Frage: {e}")
@@ -278,6 +282,7 @@ if st.button("Antwort generieren"):
         # Ähnlichste K Dokumente finden
         K = 5
         D, I = faiss_index.search(q_vec.reshape(1, -1), K)
+        progress_bar.progress(75)
         top_indices = I[0]
         # Kontext aus den Top-Ergebnissen zusammenstellen
         context_snippets = []
@@ -315,6 +320,8 @@ if st.button("Antwort generieren"):
             st.error(f"Fehler bei der GPT-4 Anfrage: {e}")
             st.stop()
         answer_text = completion.choices[0].message.content
+        progress_bar.progress(100)
+        status_text.success("✅ Antwort ist bereit")
         # Antwort anzeigen
         st.subheader("Antwort")
         st.write(answer_text)
