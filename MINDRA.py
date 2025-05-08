@@ -1,5 +1,4 @@
 import streamlit as st
-st.set_page_config(layout="wide")
 import pandas as pd
 import numpy as np
 from openai import OpenAI
@@ -26,21 +25,69 @@ from openai import OpenAI
 
 # Header: logo and title centered
 logo_path = os.path.join(os.path.dirname(__file__), "data", "mindra_logo.png")
+
+st.set_page_config(
+    layout="wide",
+    page_title="MINDRA – Interview Knowledge Base AI-Chat",
+    page_icon=logo_path,
+)
+
 if os.path.isfile(logo_path):
     # Encode logo for inline HTML
     logo_bytes = open(logo_path, "rb").read()
     logo_b64 = base64.b64encode(logo_bytes).decode()
     html_header = f"""
-    <div style="text-align:center; margin-bottom:100px;">
+    <div style="text-align:center; margin-bottom:30px;">
       <img src="data:image/png;base64,{logo_b64}" width="160" style="margin-bottom:0px;" />
-      <h1 font-size:2rem;">MINDRA – Interview Knowledge Base Explorer</h1>
+      <h1 font-size:2rem;">MINDRA – Interview Knowledge Base AI-Chat</h1>
     </div>
     """
     st.markdown(html_header, unsafe_allow_html=True)
 else:
     st.warning("Logo 'mindra_logo.png' nicht gefunden.")
 
-st.write("Diese App ermöglicht es, qualitativ kodierte Interviewdaten zu explorieren, zu analysieren und abzufragen.")
+st.divider()
+
+# Einleitungstext in zwei Spalten aufteilen
+st.markdown(
+    """
+**Willkommen bei MINDRA**
+Dein interaktives Projekt-Dashboard und zentrale Kommunikationsplattform für alle Stakeholder. Hier kannst du qualitative Interviewdaten analysieren, explorieren und interaktiv abfragen. Nutze die verschiedenen Funktionen, um tiefere Einblicke in die Daten zu gewinnen und fundierte Entscheidungen zu treffen.
+"""
+)
+
+col1, col2 = st.columns(2)
+with col1:
+    st.markdown(
+        """
+**App-Funktionen**
+- Qualitativ kodierte Interviewdaten explorieren, analysieren und abfragen
+- Paralleler Zugriff auf die Excel-Quellen oder direkt interaktiv im Browser
+- Einfache Filterung und Visualisierung der Daten
+
+**Datenübersicht**
+- 5 Cluster qualitativer Interviews aus politisch relevanten Gesprächen
+- Über 1500 Zeilen mit 7 Dimensionen (Rolle, Firma, Typ, Cluster, Beschreibung, Aussage, Quelle)
+- Sauber kodierte Daten für präzises AI-Training
+        """,
+        unsafe_allow_html=True,
+    )
+with col2:
+    st.markdown(
+        """
+**Interaktivität**
+- Ausklappbare Filter- und Verteilungs-Abschnitte in Echtzeit
+- Filter nach Cluster, Typ, Datei und Stichwortsuche
+- Interaktive Balkendiagramme für Cluster- und Typ-Verteilung
+
+**Chat-Modi**
+- *Einfach* (deskriptiv): Prägnante Zusammenfassungen der ausgewählten Daten
+- *Interpretierend*: Detaillierte Erklärungen, Analysen und konkrete Empfehlungen
+        """,
+        unsafe_allow_html=True,
+    )
+
+st.divider()
 
 # Eingabe: Frage stellen und Modus wählen
 st.subheader("Frage stellen")
@@ -66,13 +113,13 @@ client = OpenAI(api_key=openai_api_key)
 @st.cache_data(show_spinner=False)
 def load_and_clean_data():
     files = {
-        "file1.csv": "file1.csv",
-        "file2.1.csv": "file2.1.csv",
-        "file2.2.csv": "file2.2.csv",
-        "file3.1.csv": "file3.1.csv",
-        "file3.2.csv": "file3.2.csv",
-        "file4.csv": "file4.csv",
-        "file5.csv": "file5.csv"
+        "(1) Use Cases": "file1.csv",
+        "(2.1) Nutzen": "file2.1.csv",
+        "(2.2) Hard-Savings": "file2.2.csv",
+        "(3.1) Aufwand": "file3.1.csv",
+        "(3.2) Zeit": "file3.2.csv",
+        "(4) Risiken": "file4.csv",
+        "(5) Best Practices": "file5.csv"
     }
     data_frames = {}
     for label, filename in files.items():
@@ -208,7 +255,7 @@ with col1:
 
         selected_clusters = st.multiselect("Cluster auswählen", cluster_options)
         selected_types = st.multiselect("Interview Typ auswählen", type_options)
-        selected_files = st.multiselect("Quelle (Datei) auswählen", file_options, default=file_options)
+        selected_files = st.multiselect("Quelle (Auswertungs-Masterfile) auswählen", file_options, default=file_options)
         keyword = st.text_input("Stichwortsuche in Aussagen/Beschreibung")
 
         # Filter auf DataFrame anwenden
