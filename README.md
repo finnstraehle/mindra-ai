@@ -1,0 +1,2 @@
+# mindra
+# mindra-ai
