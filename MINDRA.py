@@ -322,7 +322,7 @@ def prepare_faiss_index(df: pd.DataFrame):
     index.add(embeddings_normed)
     return index, metadata, embeddings_normed
 
-# 6. Beantwortung der Frage mittels GPT-4 (RAG Pipeline)
+# 6. Beantwortung der Frage mittels GPT-4
 # -----------------------------------------------------
 if st.button("Antwort generieren"):
     # Sicherstellen, dass Voraussetzungen erfüllt sind
