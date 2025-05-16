@@ -52,7 +52,7 @@ st.divider()
 st.markdown(
     """
 **Willkommen bei MINDRA**
-Dein interaktives Projekt-Dashboard und zentrale Kommunikationsplattform für alle Stakeholder. Hier kannst du qualitative Interviewdaten analysieren, explorieren und interaktiv abfragen. Nutze die verschiedenen Funktionen, um tiefere Einblicke in die Daten zu gewinnen und fundierte Entscheidungen zu treffen.
+– Dein interaktives Projekt-Dashboard und zentrale Kommunikationsplattform für alle Stakeholder. Hier kannst du qualitative Interviewdaten analysieren, explorieren und interaktiv abfragen. Nutze die verschiedenen Funktionen, um tiefere Einblicke in die Daten zu gewinnen und fundierte Entscheidungen zu treffen.
 """
 )
 
@@ -66,9 +66,9 @@ with col1:
 - Einfache Filterung und Visualisierung der Daten
 
 **Datenübersicht**
-- 5 Cluster qualitativer Interviews aus politisch relevanten Gesprächen
-- Über 1500 Zeilen mit 7 Dimensionen (Rolle, Firma, Typ, Cluster, Beschreibung, Aussage, Quelle)
-- Sauber kodierte Daten für präzises AI-Training
+- 8 Cluster qualitativer Interviews aus relevanten Experten-Gesprächen
+- Über 1'500 sauber eingeordnete Aussagen mit jeweils 7 zugeteilten Attributen (Rolle, Firma, Typ, Cluster, Beschreibung, Aussage, NR)
+- Saubere Daten und sauberes Training der A.I.
         """,
         unsafe_allow_html=True,
     )
@@ -81,7 +81,7 @@ with col2:
 - Interaktive Balkendiagramme für Cluster- und Typ-Verteilung
 
 **Chat-Modi**
-- *Einfach* (deskriptiv): Prägnante Zusammenfassungen der ausgewählten Daten
+- *Deskriptiv*: Prägnante Zusammenfassungen der ausgewählten Daten
 - *Interpretierend*: Detaillierte Erklärungen, Analysen und konkrete Empfehlungen
         """,
         unsafe_allow_html=True,
@@ -91,7 +91,7 @@ st.divider()
 
 # Eingabe: Frage stellen und Modus wählen
 st.subheader("Frage stellen")
-query = st.text_area("Ihre Frage an die Interview-Daten:", "")
+query = st.text_area("Frage an die Interview-Daten:", "")
 answer_mode = st.radio(
     "Antwortmodus", ("Nur deskriptiv (zusammenfassend)", "Interpretierend (mit Empfehlungen)")
 )
@@ -116,9 +116,10 @@ def load_and_clean_data():
         "(1) Use Cases": "file1.csv",
         "(2.1) Nutzen": "file2.1.csv",
         "(2.2) Hard-Savings": "file2.2.csv",
-        "(3.1) Aufwand": "file3.1.csv",
-        "(3.2) Zeit": "file3.2.csv",
-        "(4) Risiken": "file4.csv",
+        "(3.1) Aufwand Qualitativ": "file3.1.csv",
+        "(3.2) Aufwand Quantitativ": "file3.2.csv",
+        "(4.1) Herausforderungen": "file4.1.csv",
+        "(4.2) Risiken": "file4.2.csv",
         "(5) Best Practices": "file5.csv"
     }
     data_frames = {}
@@ -296,7 +297,7 @@ with col2:
 
 
 # 5. Vorbereitung semantische Suche (FAISS Index mit OpenAI Embeddings)
-# --------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------------------------------------------------------
 @st.cache_resource(show_spinner=False)
 def prepare_faiss_index(df: pd.DataFrame):
     texts = []
@@ -323,7 +324,7 @@ def prepare_faiss_index(df: pd.DataFrame):
     return index, metadata, embeddings_normed
 
 # 6. Beantwortung der Frage mittels GPT-4
-# -----------------------------------------------------
+# ---------------------------------------------------------------------------------------------------------------------------------------------
 if st.button("Antwort generieren"):
     # Sicherstellen, dass Voraussetzungen erfüllt sind
     if not openai_api_key:
@@ -353,7 +354,7 @@ if st.button("Antwort generieren"):
         # Query-Vektor normalisieren
         q_vec = q_vec / (np.linalg.norm(q_vec) + 1e-10)
         # Ähnlichste K Dokumente finden
-        K = 7
+        K = 5 # Anzahl der Top-Dokumente
         D, I = faiss_index.search(q_vec.reshape(1, -1), K)
         progress_bar.progress(60)
         time.sleep(2)
@@ -409,6 +410,7 @@ if st.button("Antwort generieren"):
             quote_text = "> " + statement.replace("\n", "\n> ")
             st.markdown(quote_text)  # Aussage im Blockquote (gepolstertes Textfeld)
             st.markdown(f"*Quelle: {src_file}, Zeile {src_line}*")  # Quelle am Ende
+            st.divider()  # Trennlinie zwischen den Quellen
         # 7. Export-Funktion: Antwort und Quellen als Markdown oder CSV
         # ------------------------------------------------------------
         output_md = f"**Frage:** {query}\n\n**Antwort:**\n{answer_text}\n\n**Quellen:**\n"
