@@ -4,3 +4,4 @@ pandas
 openai
 scikit-learn
 python-dotenv
+faiss-cpu
