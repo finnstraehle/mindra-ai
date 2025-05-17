@@ -350,7 +350,7 @@ if st.button("Antwort generieren"):
             columns_description += f"- {fname}: {', '.join(cols)}\n"
         # Fortschrittsbalken und Statusanzeige initialisieren
         progress_bar = st.progress(10)
-        status_text = st.info("🤖 AI analysiert Ihre Daten und bereitet die Antwort vor...")
+        status_text = st.info("🤖 AI analysiert die Daten und bereitet die Antwort vor...")
         # FAISS Index erstellen (oder aus Cache laden)
         faiss_index, meta_list, embed_matrix = prepare_faiss_index(filtered_df)
         progress_bar.progress(25)
