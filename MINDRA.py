@@ -3,10 +3,11 @@ import pandas as pd
 import numpy as np
 from openai import OpenAI
 import time
-
+import faiss
 import os
 import base64
 from dotenv import load_dotenv
+from fpdf import FPDF
 
 # OpenAI API-Key über .env laden
 load_dotenv()
@@ -17,11 +18,6 @@ if not openai_api_key:
     st.stop()
 
 client = OpenAI(api_key=openai_api_key)
-import faiss
-from io import StringIO
-
-# OpenAI API Client (neu)
-from openai import OpenAI
 
 # Header: logo and title centered
 logo_path = os.path.join(os.path.dirname(__file__), "data", "mindra_logo.png")
@@ -32,6 +28,7 @@ st.set_page_config(
     page_icon=logo_path,
 )
 
+# Logo und Titel zentriert
 if os.path.isfile(logo_path):
     # Encode logo for inline HTML
     logo_bytes = open(logo_path, "rb").read()
@@ -45,7 +42,6 @@ if os.path.isfile(logo_path):
     st.markdown(html_header, unsafe_allow_html=True)
 else:
     st.warning("Logo 'mindra_logo.png' nicht gefunden.")
-
 st.divider()
 
 # Einleitungstext in zwei Spalten aufteilen
@@ -112,6 +108,8 @@ client = OpenAI(api_key=openai_api_key)
 # Spalten: NR, Rolle, Firma, Typ, Cluster, Beschreibung, Aussage, Quelle (jede Zeile = eine Aussage).
 @st.cache_data(show_spinner=False)
 def load_and_clean_data():
+    # Track original columns for each file
+    original_columns = {}
     files = {
         "(1) Use Cases": "file1.csv",
         "(2.1) Nutzen": "file2.1.csv",
@@ -128,6 +126,8 @@ def load_and_clean_data():
             # CSV einlesen; dtype=str sorgt dafür, dass alles als Text gelesen wird
             data_path = os.path.abspath(os.path.join(os.getcwd(), 'data'))
             df = pd.read_csv(os.path.join(data_path, filename), dtype=str, keep_default_na=False, engine='python')
+            # Record the raw column names before cleaning
+            original_columns[label] = df.columns.tolist()
         except Exception as e:
             st.error(f"Fehler beim Lesen von {filename}: {e}")
             continue
@@ -241,56 +241,66 @@ def load_and_clean_data():
         df = df.copy()
         df["Datei"] = label
         combined = pd.concat([combined, df], ignore_index=True)
-    return combined
+    return combined, original_columns
 
 
-data_df = load_and_clean_data()
+data_df, column_info = load_and_clean_data()
 
 # Filter und Verteilung in expandierbaren Spalten
 col1, col2 = st.columns(2)
 with col1:
     with st.expander("Filter", expanded=False):
-        cluster_options = sorted({c for c in data_df["Cluster"] if c})
-        type_options = sorted({t for t in data_df["Typ"] if t})
-        file_options = sorted(set(data_df["Datei"]))
-
-        selected_clusters = st.multiselect("Cluster auswählen", cluster_options)
-        selected_types = st.multiselect("Interview Typ auswählen", type_options)
+        # Quelle (Auswertungs-Masterfile) auswählen
+        file_options = sorted(data_df["Datei"].unique())
         selected_files = st.multiselect("Quelle (Auswertungs-Masterfile) auswählen", file_options, default=file_options)
+
+        # Nur die Spalte "Cluster" basierend auf ausgewählten Dateien anzeigen
+        cluster_options = []
+        for label in selected_files:
+            clusters = [c for c in data_df.loc[data_df["Datei"] == label, "Cluster"].unique() if c]
+            for c in sorted(clusters):
+                cluster_options.append(f"{label}: {c}")
+        selected_clusters = st.multiselect("Cluster auswählen", cluster_options)
+
+        # Interview Typ auswählen
+        type_options = sorted({t for t in data_df["Typ"] if t})
+        selected_types = st.multiselect("Interview Typ auswählen", type_options)
+
+        # Stichwortsuche
         keyword = st.text_input("Stichwortsuche in Aussagen/Beschreibung")
 
         # Filter auf DataFrame anwenden
         filtered_df = data_df.copy()
-        if selected_clusters:
-            filtered_df = filtered_df[filtered_df["Cluster"].isin(selected_clusters)]
-        if selected_types:
-            filtered_df = filtered_df[filtered_df["Typ"].isin(selected_types)]
         if selected_files:
             filtered_df = filtered_df[filtered_df["Datei"].isin(selected_files)]
+        if selected_clusters:
+            mask = pd.Series(False, index=filtered_df.index)
+            for sel in selected_clusters:
+                file_label, cluster_val = sel.split(": ", 1)
+                mask |= (filtered_df["Datei"] == file_label) & (filtered_df["Cluster"] == cluster_val)
+            filtered_df = filtered_df[mask]
+        if selected_types:
+            filtered_df = filtered_df[filtered_df["Typ"].isin(selected_types)]
         if keyword:
             kw = keyword.lower()
-            mask = (
+            mask_kw = (
                 filtered_df["Aussage"].str.lower().str.contains(kw)
                 | filtered_df["Beschreibung"].str.lower().str.contains(kw)
             )
-            filtered_df = filtered_df[mask]
+            filtered_df = filtered_df[mask_kw]
 with col2:
     with st.expander("Datenverteilung", expanded=False):
         if not filtered_df.empty:
             subcol1, subcol2 = st.columns(2)
             with subcol1:
                 st.markdown("**Cluster-Verteilung (Anzahl Aussagen)**")
-                cluster_counts = (
-                    filtered_df["Cluster"].replace("", "(kein Cluster)")
-                    .value_counts()
-                )
+                # Nur die Spalte "Cluster" verwenden
+                cluster_counts = filtered_df["Cluster"].value_counts()
                 st.bar_chart(cluster_counts)
             with subcol2:
                 st.markdown("**Typ-Verteilung (Anzahl Aussagen)**")
-                type_counts = (
-                    filtered_df["Typ"].replace("", "(kein Typ)")
-                    .value_counts()
-                )
+                # Nur tatsächlich vorhandene Typen verwenden (leere Einträge ausblenden)
+                type_counts = filtered_df.loc[filtered_df["Typ"].str.strip() != "", "Typ"].value_counts()
                 st.bar_chart(type_counts)
         else:
             st.write("Keine Daten für ausgewählte Filter.")
@@ -334,6 +344,10 @@ if st.button("Antwort generieren"):
     elif filtered_df.empty:
         st.warning("Für die gewählten Filter sind keine Daten vorhanden.")
     else:
+        # Column info description for GPT
+        columns_description = "Spalten in den Quelldateien:\n"
+        for fname, cols in column_info.items():
+            columns_description += f"- {fname}: {', '.join(cols)}\n"
         # Fortschrittsbalken und Statusanzeige initialisieren
         progress_bar = st.progress(10)
         status_text = st.info("🤖 AI analysiert Ihre Daten und bereitet die Antwort vor...")
@@ -353,15 +367,23 @@ if st.button("Antwort generieren"):
         q_vec = np.array(q_emb, dtype="float32")
         # Query-Vektor normalisieren
         q_vec = q_vec / (np.linalg.norm(q_vec) + 1e-10)
-        # Ähnlichste K Dokumente finden
-        K = 5 # Anzahl der Top-Dokumente
-        D, I = faiss_index.search(q_vec.reshape(1, -1), K)
-        progress_bar.progress(60)
-        time.sleep(2)
-        progress_bar.progress(70)
-        time.sleep(2)
-        progress_bar.progress(80)
-        top_indices = I[0]
+        # Dynamische Obergrenze für Top-Dokumente basierend auf verfügbarer Datenmenge
+        max_k = 5  # Maximale Anzahl der Top-Dokumente
+        num_candidates = min(max_k, len(filtered_df))
+        # Nur suchen, wenn es mindestens ein Dokument gibt
+        if num_candidates > 0:
+            D, I = faiss_index.search(q_vec.reshape(1, -1), num_candidates)
+            raw_indices = I[0]
+        else:
+            raw_indices = []
+        # Nur eindeutige Indizes behalten und auf num_candidates begrenzen
+        unique_indices = []
+        for idx in raw_indices:
+            if idx < len(filtered_df) and idx not in unique_indices:
+                unique_indices.append(idx)
+                if len(unique_indices) >= num_candidates:
+                    break
+        top_indices = unique_indices
         # Kontext aus den Top-Ergebnissen zusammenstellen
         context_snippets = []
         references = []
@@ -388,6 +410,7 @@ if st.button("Antwort generieren"):
         context_text = "Relevante Aussagen:\n" + "\n".join(context_snippets)
         messages = [
             {"role": "system", "content": system_prompt},
+            {"role": "system", "content": columns_description},
             {"role": "system", "content": context_text},
             {"role": "user", "content": query.strip()}
         ]
@@ -424,3 +447,73 @@ if st.button("Antwort generieren"):
         csv_data = output_csv_df.to_csv(index=False).encode("utf-8")
         st.download_button("Antwort und Quellen als Markdown herunterladen", output_md, file_name="antwort_und_quellen.md")
         st.download_button("Antwort und Quellen als CSV herunterladen", csv_data, file_name="antwort_und_quellen.csv")
+
+        # PDF-Export der Antwort und Quellen
+        def create_pdf_bytes(query, answer_text, references):
+            def sanitize(text):
+                # Entfernt Zeichen außerhalb des Latin-1 Bereichs
+                return ''.join(ch if ord(ch) < 256 else ' ' for ch in text)
+
+            pdf = FPDF()
+            pdf.set_auto_page_break(auto=True, margin=15)
+            pdf.add_page()
+
+            # Dokument-Header
+            pdf.set_font("Arial", 'I', 8)
+            pdf.cell(0, 6, sanitize("Antworten generiert durch MINDRA – basierend auf Interviewdaten"), 0, 1, 'C')
+            pdf.ln(4)
+
+            # Frage-Section (fett)
+            pdf.set_font("Arial", 'B', 12)
+            pdf.multi_cell(0, 8, sanitize(f"Frage: {query}"))
+            pdf.ln(2)
+
+            # Antwort-Section (fett)
+            pdf.set_font("Arial", 'B', 12)
+            pdf.multi_cell(0, 8, "Zusammenfassung:")
+            # Antworttext kursiv darstellen
+            pdf.set_font("Arial", 'I', 10)
+            pdf.multi_cell(0, 8, sanitize(answer_text))
+            pdf.ln(3)
+            # Seite für Quellen beginnen
+            pdf.add_page()
+
+            # Quellen-Section (fett)
+            pdf.set_font("Arial", 'B', 12)
+            pdf.multi_cell(0, 8, "Quellen:")
+            pdf.ln(1)
+
+            # Jede Quelle schön abgetrennt und gestylt
+            for src_file, src_line, role, company, typ, statement in references:
+                # Rollen/Unternehmen als fette Überschrift
+                pdf.set_font("Arial", 'B', 10)
+                pdf.multi_cell(0, 6, sanitize(f"{role}, {company} ({typ})"))
+
+                # Aussage kursiv eingerückt
+                pdf.set_font("Arial", 'I', 9)
+                pdf.multi_cell(0, 6, "  " + sanitize(f"\"{statement}\""))
+
+                # Quelle klein und normal
+                pdf.set_font("Arial", size=8)
+                pdf.multi_cell(0, 5, sanitize(f"Quelle: {src_file}, Zeile {src_line}"))
+
+                # Abstand oberhalb der Trennlinie
+                pdf.ln(4)
+                # Horizontale Trennlinie
+                y = pdf.get_y()
+                pdf.set_draw_color(0, 0, 0)
+                pdf.set_line_width(0.2)
+                pdf.line(10, y, pdf.w - 10, y)
+                # Abstand unterhalb der Trennlinie
+                pdf.ln(4)
+            return pdf.output(dest="S").encode("latin-1")
+        try:
+            pdf_bytes = create_pdf_bytes(query, answer_text, references)
+            st.download_button(
+                "Antwort und Quellen als PDF herunterladen",
+                pdf_bytes,
+                file_name="antwort_und_quellen.pdf",
+                mime="application/pdf"
+            )
+        except Exception as e:
+            st.error(f"PDF-Export fehlgeschlagen: {e}")

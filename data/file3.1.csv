@@ -58,7 +58,7 @@ value quickly.",First Value ,"Auch mit wenigen Leuten, so schnell wie möglich W
 3,Experte,Collibra,EDM / EDC Anbieter,"It's because both of you are right or wrong because the simply that the definition you're using
 to measure what a customer is might be different, right? And that is because of the way that
 your business is functioning, your business line of business is functioning. So in order to minimize this kind of problems, you can have a simple thing of definitions, right?",Pain Point,"Zum Teil hat man verschiedene Definitionen für das gleiche, muss differenziert werden",
-31,Professor,IT Management,Univesität,"Also du musst die Leute wirklich, du musst Verantwortung dorthin delegieren, wo am Ende
+31,Professor,IT Management,Universität,"Also du musst die Leute wirklich, du musst Verantwortung dorthin delegieren, wo am Ende
 auch die Arbeit getan werden muss. Das muss aber nach oben reported werden und das
 Reporting muss auch irgendwie einen Einfluss haben. Jetzt für Bonussysteme beispielsweise
 oder Monetär.",Pain Point,Verantwortung nicht klar delegiert ,
@@ -85,8 +85,8 @@ amount of time in getting companies to first value, and like ultimately with gov
 really around identifying and establishing their critical data assets. ",First Value ,"Je nachdem, was für das Unternehmen als erster Erfolg eingestuft wird, ist er schneller erreicht ",
 13,Experte,Starburst,EDM / EDC Anbieter,"As I said, there's kind of both aspects, trying to understand it from a technological point of
 view, but also managing resistance in a company when dealing with this decision. And as I
-said, one of the key criteria in this decision is also the time factor. (Finn)",Zeitaufwand ,"
-Zeitaufwand ist elementar, ob die Leute aufs Projekt 
+said, one of the key criteria in this decision is also the time factor.",Zeitaufwand ,"
+Zeitaufwand ist elementar, ob die Leute aufs Projekt
 aufspringen oder nicht",
 14,Berater,Globale Beratungsfirma,Beratung,"But then there's also the human aspect of it, getting people together, getting people to agree
 on all of these things, to come to a point where they're okay with what's being populated in
@@ -94,13 +94,13 @@ the data catalog in the first place. That is really where the human aspect of da
 comes in, and a bit of company politics and culture as well. So people might eventually just
 drag on the meetings, they might not come to a conclusion at the end of the committee
 meeting or any such meeting, so you might not end up populating the data catalog in the first
-place.",Pain Point,"Überzeugungsarbeit und Akzeptanz schaffen 
-bevor man überhaupt implementieren kann - braucht Zeit  
+place.",Pain Point,"Überzeugungsarbeit und Akzeptanz schaffen
+bevor man überhaupt implementieren kann - braucht Zeit
 Die größte Hürde ist, dass menschliche Abstimmungsprozesse und politische Interessen die Befüllung des Datenkatalogs oft blockieren.",
 14,Berater,Globale Beratungsfirma,Beratung,"We had individual sessions of onboarding them onto the new tool and the new way of
 working. And it was just really about convincing them about, yeah, this is actually easier in
 the long run, it'll be better for you. And trying to get them to do it themselves as well, once
-or twice, so that they get a feel for it. That helped me get their buy-in. ",Vorarbeit ,"Individuelle Gespräche für einen Onboarding Prozess 
+or twice, so that they get a feel for it. That helped me get their buy-in. ",Vorarbeit ,"Individuelle Gespräche für einen Onboarding Prozess
 Überzeugungsareit lohnt sich - zeigt Wert zu einem späteren Zeitpunkt ",
 14,Berater,Globale Beratungsfirma,Beratung,"So in FSI, as I said, since a lot of it is regulatory driven, a lot of it is just things that
 the bank has to do, or else they will have to let go of their license. So in FSI, it's less so, but
@@ -116,9 +116,9 @@ platform, then that's what we serve them.
 But yeah, a lot of it depends on the situation of the bank, their data management maturity,
 the size of the bank and what the regulator is expecting from them. That's mostly from an FSI
 perspective. From a corporate perspective, it's, yeah, I don't have enough experience there,
-unfortunately, to be able to comment on it.",Reifegrad ,"Implementierungsaufwand/Zeit ist abhängig von der Reife des Klienten - wie gut ist Strategie erarbeitet - sind Daten sortiert? 
+unfortunately, to be able to comment on it.",Reifegrad ,"Implementierungsaufwand/Zeit ist abhängig von der Reife des Klienten - wie gut ist Strategie erarbeitet - sind Daten sortiert?
 
-Nicht ausgreifte Unternehmen/Banken, welche alles von Anfang an machen müssen, haben mehr Aufwand - brauchen mehr Zeit. 
+Nicht ausgreifte Unternehmen/Banken, welche alles von Anfang an machen müssen, haben mehr Aufwand - brauchen mehr Zeit.
 
 ",
 14,Berater,Globale Beratungsfirma,Beratung,"The answer that I gave previously for the one to two months is facilitated or made
@@ -161,8 +161,8 @@ number.",Pain Point,"Die Herausforderung ist, dass die Excel-geprägte Denkweise
 say an Excel table, I would say, more than a database because they had already the columns
 that they wanted to visualize. They had an idea of what they would put where and kind of a
 vision of what the dashboard will be used for and for who as well and who will use it and
-everything.",Vorarbeit ,"Es wurde schon Vorarbeit geleistet: 
-Es existiert eine Datenbasis und auch schon eine Strategie wie sie es 
+everything.",Vorarbeit ,"Es wurde schon Vorarbeit geleistet:
+Es existiert eine Datenbasis und auch schon eine Strategie wie sie es
 visualisieren möchten",
 16,Data Lead,Private Equity,Externe Firma,"So I think it takes this kind of learning and training time and it
 shouldn't be underestimated at least on my opinion.",Volle / Restliche Implementierung,"Es braucht Angewöhnungszeit ans neue Tool, darf nicht unterschätzt werden ",
@@ -225,7 +225,7 @@ transformiert werden, die müssen die Logik interpretieren können, und, und, un
 vielleicht auch noch die Lineage abbilden dazu. ",Pain Point,"Die technische Komplexität und fehlende geeignete Tools erschweren es massiv, Transformationslogiken aus Start Procedures, Oracle Packages oder anderen Systemen auszulesen und nachvollziehbar zu dokumentieren",
 20,CEO,Beratungsfirma,Beratung,"Das Problem ist nicht nur, dass es stehen bleibt, der Nutzen ist dann auch nicht dort. Du
 kannst die Informationen alle sammeln, das ist eine Fliessarbeit, aber die Frage ist, was ist der
-Nutzen des Ganzen? Was bringt es, wenn du all die Informationen hast? ",Pain Point,"Wenn man versucht alles zusammen zu Implementieren, verrennt man sich und das Projekt bleibt stehen, dann  sieht man den Nutzen nicht mehr 
+Nutzen des Ganzen? Was bringt es, wenn du all die Informationen hast? ",Pain Point,"Wenn man versucht alles zusammen zu Implementieren, verrennt man sich und das Projekt bleibt stehen, dann  sieht man den Nutzen nicht mehr
 ",
 20,CEO,Beratungsfirma,Beratung,"Wie bildest du das ab? Und da gibt es auch Tools dazu, die das machen, aber auch dort ist
 wieder eine relativ hohe Komplexität, um das dann wirklich durchgehend abzubilden. Also ich
@@ -313,7 +313,7 @@ Wenn der Nutzen für die Zielgruppe nicht klar ist und der Aufwand hoch, scheite
 24,Head of Data EMEA,Globale Bank,Externe Firma,"And delivering good messages in very short periods of time is highly appreciated. So
 getting to the habit of having a one-pager where you deliver the main message in five
 minutes, then you can get into the detail. But if you do not get their attention, if you do not
-get their curiosity, it will be wasted time.",First Value ,"Zwischenergebnisse in einem One Pager festhalten, damit MA motiviert bleiben und ihren Fortschritt sehen, diese in kurzen Zeitspannen präsentieren 
+get their curiosity, it will be wasted time.",First Value ,"Zwischenergebnisse in einem One Pager festhalten, damit MA motiviert bleiben und ihren Fortschritt sehen, diese in kurzen Zeitspannen präsentieren
 ",
 5,Data & AI Experte,Beratungsfirma,Beratung,"Data catalog technologiegetrieben eingeführt - Das war relativ einfach, weil es die Analysten alle sehr schnell aufgegriffen haben. Es wurde
 dann aber schnell, also dann kam auch das ganze Thema GDPR ja mit rein bei uns. .",Volle / Restliche Implementierung,"Die technologische Implementierung des EDC ging relativ schnell und einfach, da Analysten den Prozess verstenden haben",
