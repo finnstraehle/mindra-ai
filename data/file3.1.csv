@@ -1,93 +1,93 @@
-﻿NR,Rolle,Firma,Typ,Aussage,Cluster,Beschreibung,
+﻿NR,Rolle,Firma,Typ,Aussage,Cluster,Beschreibung,,
 1,Chief Data Officer,Globaler Brauereikonzern,Collibra Success Story,"So for us, in our case, we had what's called touchless processes. We wanted to reduce manual work because we had lots of people actually bringing data from one system to the other and we found that this was extremely inefficient. So it worked really well. It was a big effort. I know many other companies have tried to do it and they quite didn't get
-there. So I think we got to the end and we were quite happy with it. But it was a big, big, big effort indeed. (EDM)",Volle / Restliche Implementierung,"Es war ein sehr grosser Aufwand Daten vom einen System ins andere zu bringen, jedoch ist man jetzt glücklich so wie es ist.",
-1,Chief Data Officer,Globaler Brauereikonzern,Collibra Success Story,"We had 80 operating companies with multiple languages, and in each of the operating companies, they already had their own definition. So it was quite big in terms of, we had to do the global one, but then we had to also check what were the differences of local and global.",Vorarbeit,Aufgrund unterschiedlicher Definitionen und Sprachen in den Gesellschaften musst eine einheitliche Definition erstellt werden und geprüft werden worin sich die globale Definition von der Lokalen unerscheidet,
-1,Chief Data Officer,Globaler Brauereikonzern,Collibra Success Story,"once you have the first implementation, for instance, then all the operating companies were coming with ideas of things that they wanted to improve, different workloads, different functionality that you had.",Weiterentwicklung nach der Implementierung ,Gesellschaften kommen mit Verbesserungsideen bezüglich Funktionalitäten und Auslastug ,
+there. So I think we got to the end and we were quite happy with it. But it was a big, big, big effort indeed. (EDM)",Volle / Restliche Implementierung,"Es war ein sehr grosser Aufwand Daten vom einen System ins andere zu bringen, jedoch ist man jetzt glücklich so wie es ist.",,
+1,Chief Data Officer,Globaler Brauereikonzern,Collibra Success Story,"We had 80 operating companies with multiple languages, and in each of the operating companies, they already had their own definition. So it was quite big in terms of, we had to do the global one, but then we had to also check what were the differences of local and global.",Vorarbeit,Aufgrund unterschiedlicher Definitionen und Sprachen in den Gesellschaften musst eine einheitliche Definition erstellt werden und geprüft werden worin sich die globale Definition von der Lokalen unerscheidet,,
+1,Chief Data Officer,Globaler Brauereikonzern,Collibra Success Story,"once you have the first implementation, for instance, then all the operating companies were coming with ideas of things that they wanted to improve, different workloads, different functionality that you had.",Weiterentwicklung nach der Implementierung ,Gesellschaften kommen mit Verbesserungsideen bezüglich Funktionalitäten und Auslastug ,,
 1,Chief Data Officer,Globaler Brauereikonzern,Collibra Success Story,"And then once you have the initial implementation, then you almost like the tool becomes more and more important, you want to do more things with it.
-And so that becomes, say, you then have a backlog and then you say, okay, every year we're going to spend X just on these changes. And then you keep on doing those changes.",Weiterentwicklung nach der Implementierung ,Planung der jährlichen Investitionen in neue Veränderungen nach erfolgreicher Implementierung ,
+And so that becomes, say, you then have a backlog and then you say, okay, every year we're going to spend X just on these changes. And then you keep on doing those changes.",Weiterentwicklung nach der Implementierung ,Planung der jährlichen Investitionen in neue Veränderungen nach erfolgreicher Implementierung ,,
 1,Chief Data Officer,Globaler Brauereikonzern,Collibra Success Story,"It was the first step that took us some time. Going back, we already had Collibra in one
 of the business units, i.e. the Netherlands, because the Netherlands was one of the
 operating companies, but everything was in Dutch. And we couldn't use it because they had
-different business models.",Pain Point,"Collibra war zwar schon implementiert in einer der Firmen, jedoch konnte man es aufgrund der unterschiedlichen Sprache und Geschäftsmodell nicht übernehmen",
+different business models.",Pain Point,"Collibra war zwar schon implementiert in einer der Firmen, jedoch konnte man es aufgrund der unterschiedlichen Sprache und Geschäftsmodell nicht übernehmen",,
 1,Chief Data Officer,Globaler Brauereikonzern,Collibra Success Story,"So we had to start from scratch and do a global version. So that took us a while. And the
 reason why it took us a while is not so much the implementation of the system, but then
-you need to have the definitions.",Vorarbeit,"Das Unternehmen musste eine globale Definiton erarbeiten, bevor es mit einer unternehmensweiten Implemetierung beginnen konnte.",
+you need to have the definitions.",Vorarbeit,"Das Unternehmen musste eine globale Definiton erarbeiten, bevor es mit einer unternehmensweiten Implemetierung beginnen konnte.",,
 1,Chief Data Officer,Globaler Brauereikonzern,Collibra Success Story,"So we had to start from scratch and do a global version. So that took us a while. And the
 reason why it took us a while is not so much the implementation of the system, but then
-you need to have the definitions.",Volle / Restliche Implementierung,"Implementation selbst brauchte nicht viel Zeit, mehr die Vorarbeit der globalen Definiton",
+you need to have the definitions.",Volle / Restliche Implementierung,"Implementation selbst brauchte nicht viel Zeit, mehr die Vorarbeit der globalen Definiton",,
 1,Chief Data Officer,Globaler Brauereikonzern,Collibra Success Story,"Because usually you don't have all
 the definitions of all the entities, you don't have the data quality rules, you don't have the
 list of all your critical reports, the business has not decided which are the critical reports,
-what are the critical KPIs. So it took us a while to get to that base level.",Vorarbeit ,"Um überhaupt zur Implementierungsbasis zu kommen musste viel Vorarbeit geleistet werde, wie zum Beispiel kritische Reporte und KPI's identifizieren und Data Quality sicherstellen",
+what are the critical KPIs. So it took us a while to get to that base level.",Vorarbeit ,"Um überhaupt zur Implementierungsbasis zu kommen musste viel Vorarbeit geleistet werde, wie zum Beispiel kritische Reporte und KPI's identifizieren und Data Quality sicherstellen",,
 1,Chief Data Officer,Globaler Brauereikonzern,Collibra Success Story,"Organizing processes, definitely, because where there were none, we put some. And
-that always takes some time.",Pain Point,"Der anspruchvollste Teil der Implementierung war die Prozessorganisierung, welche auch viel Zeit in Anspruch genommen hat",
+that always takes some time.",Pain Point,"Der anspruchvollste Teil der Implementierung war die Prozessorganisierung, welche auch viel Zeit in Anspruch genommen hat",,
 1,Chief Data Officer,Globaler Brauereikonzern,Collibra Success Story,"Because, of course, globaler Brauereikonzern is not operating, there is no official language because it's a
 Dutch company. Well, there is English, but then most operating companies are either in
 Spanish or French or Osweili or any other. So then it was literally that understanding what
 was already locally and what was the difference between English and the local was not a
-small thing.",Pain Point,"Kommunikationssprache war nicht klar, da sehr viele unterschiedliche Sprachkulturen existierten",
+small thing.",Pain Point,"Kommunikationssprache war nicht klar, da sehr viele unterschiedliche Sprachkulturen existierten",,
 1,Chief Data Officer,Globaler Brauereikonzern,Collibra Success Story,"So in some places, it went really fast because the business was
 already owning the data somehow, or at least they were more interested. In some cases,
 data was under finance, and that's usually a good thing because finance is very diligent
-when it comes to data. ",Volle / Restliche Implementierung,"Wenn schon Daten Ownership existiert, geht die Implemntierung schneller und effizienter, besonders erkennbar im Finanzbereich",
+when it comes to data. ",Volle / Restliche Implementierung,"Wenn schon Daten Ownership existiert, geht die Implemntierung schneller und effizienter, besonders erkennbar im Finanzbereich",,
 1,Chief Data Officer,Globaler Brauereikonzern,Collibra Success Story,"In some countries, there was nothing, and of course, where there was nothing, it was much
-more work to start things from the beginning.",Volle / Restliche Implementierung,"Wenn es viel Vorarbeit braucht, da alles von Anfang an gemacht werden muss, ist die Implementierungszeit länger. Dies war so in gweissen Ländern",
+more work to start things from the beginning.",Volle / Restliche Implementierung,"Wenn es viel Vorarbeit braucht, da alles von Anfang an gemacht werden muss, ist die Implementierungszeit länger. Dies war so in gweissen Ländern",,
 1,Chief Data Officer,Globaler Brauereikonzern,Collibra Success Story,"So the different maturity curve of each
 operating company also had an impact on how fast we could go in that particular operating
-company.",Reifegrad ,"Der Reifegrad jeder Firma ist entscheidend, wie schnell ein Tool implementiert werden kann ",
+company.",Reifegrad ,"Der Reifegrad jeder Firma ist entscheidend, wie schnell ein Tool implementiert werden kann ",,
 1,Chief Data Officer,Globaler Brauereikonzern,Collibra Success Story,"And that's what you have to do. At some point, these things need to be a bit pushed.
-Otherwise, by consent, that will never happen.",Pain Point,"Gewisse Prozesse müssen auch ohne Einverständnis von allen durchgeführt werden, sonst kommt man nicht ans Ziel, vor allem nicht in einer angemessenen Zeit ",
+Otherwise, by consent, that will never happen.",Pain Point,"Gewisse Prozesse müssen auch ohne Einverständnis von allen durchgeführt werden, sonst kommt man nicht ans Ziel, vor allem nicht in einer angemessenen Zeit ",,
 1,Chief Data Officer,Globaler Brauereikonzern,Collibra Success Story,"So I'm sure if an organization has got a strategic list of things that they need to do, that
 needs to be in that list. Because then it's governed, the budgets are there, and also from a
 local point of view, there is an understanding that this is happening. So then it needs to be
 in the normal run of the financial year.
 So the budgets need to be agreed. All kinds of stuff needs to be in place, which is hygiene,
-but usually sometimes data tends to be outside.",Budget,"Um Budgets zu berechenn braucht es eine startegische Liste, was es alles braucht, diese müssen bewilligt werden ",
+but usually sometimes data tends to be outside.",Budget,"Um Budgets zu berechenn braucht es eine startegische Liste, was es alles braucht, diese müssen bewilligt werden ",,
 10,Data Executive,Versicherungsfirma,Collibra Success Story,"And the other challenges users face sometimes is that they might have two different reports
 reporting different data with different numbers. Well, same data may be different numbers
 because they may have different criteria and they may be calling something different. So
-that's a common problem.",Pain Point,"Ein häufiges Problem ist, dass es zum Teil zwei unterschiedliche Berichte geben kann, welche sich zwar auf dieselben Daten beziehen, aber Unterschiedliche Zahlen aufweisen, da Begriffe unterschiedlich definiert oder unterschiedliche Kriterien verwendet werden",
+that's a common problem.",Pain Point,"Ein häufiges Problem ist, dass es zum Teil zwei unterschiedliche Berichte geben kann, welche sich zwar auf dieselben Daten beziehen, aber Unterschiedliche Zahlen aufweisen, da Begriffe unterschiedlich definiert oder unterschiedliche Kriterien verwendet werden",,
 11,Experte,Collibra,EDM / EDC Anbieter,"Kommunikationsstrategie, das wird auch immer, also zwei Dinge, Trainings und
 Kommunikationsstrategie. Ansonsten geht es nicht. Das ist kein Tool, was man hinsetzt und
 dann sagen alle, hurra, endlich haben wir einen Datenkatalog und jetzt lassen wir es mal alle
-loslegen.",Pain Point,"Datenatalog macht nicht von Grund aus Spass, man muss Leute einführen",
-11,Experte,Collibra,EDM / EDC Anbieter,"Das Ding wird komplett ignoriert, wenn ich es nicht promote.",Pain Point,"Tool wird nicht beachtet, wenn man es nicht vorstellt",
+loslegen.",Pain Point,"Datenatalog macht nicht von Grund aus Spass, man muss Leute einführen",,
+11,Experte,Collibra,EDM / EDC Anbieter,"Das Ding wird komplett ignoriert, wenn ich es nicht promote.",Pain Point,"Tool wird nicht beachtet, wenn man es nicht vorstellt",,
 3,Experte,Collibra,EDM / EDC Anbieter,"You don't have a number of people to do all of these things. You only have a few people. You
 need to deal with those people the best possible way. And the only way to do that is to show
-value quickly.",First Value ,"Auch mit wenigen Leuten, so schnell wie möglich Wert zeigen",
+value quickly.",First Value ,"Auch mit wenigen Leuten, so schnell wie möglich Wert zeigen",,
 3,Experte,Collibra,EDM / EDC Anbieter,"It's because both of you are right or wrong because the simply that the definition you're using
 to measure what a customer is might be different, right? And that is because of the way that
-your business is functioning, your business line of business is functioning. So in order to minimize this kind of problems, you can have a simple thing of definitions, right?",Pain Point,"Zum Teil hat man verschiedene Definitionen für das gleiche, muss differenziert werden",
-31,Professor,IT Management,Universität,"Also du musst die Leute wirklich, du musst Verantwortung dorthin delegieren, wo am Ende
+your business is functioning, your business line of business is functioning. So in order to minimize this kind of problems, you can have a simple thing of definitions, right?",Pain Point,"Zum Teil hat man verschiedene Definitionen für das gleiche, muss differenziert werden",,
+31,Professor,IT Management,Univesität,"Also du musst die Leute wirklich, du musst Verantwortung dorthin delegieren, wo am Ende
 auch die Arbeit getan werden muss. Das muss aber nach oben reported werden und das
 Reporting muss auch irgendwie einen Einfluss haben. Jetzt für Bonussysteme beispielsweise
-oder Monetär.",Pain Point,Verantwortung nicht klar delegiert ,
+oder Monetär.",Pain Point,Verantwortung nicht klar delegiert ,,
 12,Chief Operations Officer,Handelsunternehmen,Externe Firma,"Ja, das hängt vom Approach ab und es gibt den gesamtheitlichen Approach, wo man
 zuerst sagt, ja wir müssen es komplett verstehen und wir müssen Strategie haben und dann
 möchten wir die Talente rekrutieren, die das können und dann gehen die Schritt um Schritt
-und am Schluss alles stimmt. ",Vorarbeit ,"Je nach Strategie, möchte das Unternehemen, dass de Mitarbeitenden das Tool komplett verstehen und auch eine klare Strategie haben welche Personen sie für die Implementierung brauchen ",
+und am Schluss alles stimmt. ",Vorarbeit ,"Je nach Strategie, möchte das Unternehemen, dass de Mitarbeitenden das Tool komplett verstehen und auch eine klare Strategie haben welche Personen sie für die Implementierung brauchen ",,
 12,Chief Operations Officer,Handelsunternehmen,Externe Firma,"Die Kunst besteht ja darin, eine langfristige Vision zu haben und eine saubere
 Governance und Definitionen und ein Framework, wo du das aufsetzen kannst und faktisch
 in den Organisationen arbeiten alle an verschiedenen Ecken und Enden. Das ist sehr
-aufwendig, das einzufangen.",Pain Point,"Die Herausforderung ist, eine einheitliche Governance-Struktur mit klaren Definitionen aufzubauen, obwohl in der Organisation dezentral und uneinheitlich gearbeitet wird.",
+aufwendig, das einzufangen.",Pain Point,"Die Herausforderung ist, eine einheitliche Governance-Struktur mit klaren Definitionen aufzubauen, obwohl in der Organisation dezentral und uneinheitlich gearbeitet wird.",,
 2,IT Projektleiter,Detailhandel,Externe Firma,"Ja, also die Initiierungskosten sind nicht zu unterschätzen, weil einerseits mal sich
-konzeptionell darüber zu einigen, was man machen möchte.",Budget,"Vor Implementierung budget setzen und einigen, was das Ziel ist",
+konzeptionell darüber zu einigen, was man machen möchte.",Budget,"Vor Implementierung budget setzen und einigen, was das Ziel ist",,
 2,IT Projektleiter,Detailhandel,Externe Firma,"Also man muss einen langen Schnauf haben, einen langen Horizont und
 wirklich Data als Kernteil der Strategie identifiziert haben, um den Weg zu gehen. Es ist nicht
-der einfachste Weg. Der einfachste Weg ist Point to Point Integration. ",Volle / Restliche Implementierung,"Für eine volle Implementierung braucht es Ausdauer, weil es nicht das einfachste Projekt ist, vor allem bei der Vorarbeit ist es wichtig Data als Kernteil der Strategie identifiziert zu haben",
+der einfachste Weg. Der einfachste Weg ist Point to Point Integration. ",Volle / Restliche Implementierung,"Für eine volle Implementierung braucht es Ausdauer, weil es nicht das einfachste Projekt ist, vor allem bei der Vorarbeit ist es wichtig Data als Kernteil der Strategie identifiziert zu haben",,
 2,IT Projektleiter,Detailhandel,Externe Firma,"wenn ich jetzt quasi das vertreten müsste, den Invest würde ich
 nicht versuchen den Payback in den Vordergrund zu stellen.  Also den wirklichen Immediate Return hast du beim Thema Stammdaten, was extrem greifbar ist und so, da bist du sehr kurz,
 aber wenn du schaust, was du vorne dran brauchst und dann, was da wirklich die Savings sind,
 und das, das dauert.",First Value ,"First Value
- nicht in Vordergrund, das dies Zeit kostet und lange dauern kann",
+ nicht in Vordergrund, das dies Zeit kostet und lange dauern kann",,
 13,Experte,Starburst,EDM / EDC Anbieter,"And it depends on what the success means for organizations. I spent a considerable
 amount of time in getting companies to first value, and like ultimately with governance is
-really around identifying and establishing their critical data assets. ",First Value ,"Je nachdem, was für das Unternehmen als erster Erfolg eingestuft wird, ist er schneller erreicht ",
+really around identifying and establishing their critical data assets. ",First Value ,"Je nachdem, was für das Unternehmen als erster Erfolg eingestuft wird, ist er schneller erreicht ",,
 13,Experte,Starburst,EDM / EDC Anbieter,"As I said, there's kind of both aspects, trying to understand it from a technological point of
 view, but also managing resistance in a company when dealing with this decision. And as I
 said, one of the key criteria in this decision is also the time factor.",Zeitaufwand ,"
 Zeitaufwand ist elementar, ob die Leute aufs Projekt
-aufspringen oder nicht",
+aufspringen oder nicht",,
 14,Berater,Globale Beratungsfirma,Beratung,"But then there's also the human aspect of it, getting people together, getting people to agree
 on all of these things, to come to a point where they're okay with what's being populated in
 the data catalog in the first place. That is really where the human aspect of data management
@@ -96,16 +96,16 @@ drag on the meetings, they might not come to a conclusion at the end of the comm
 meeting or any such meeting, so you might not end up populating the data catalog in the first
 place.",Pain Point,"Überzeugungsarbeit und Akzeptanz schaffen
 bevor man überhaupt implementieren kann - braucht Zeit
-Die größte Hürde ist, dass menschliche Abstimmungsprozesse und politische Interessen die Befüllung des Datenkatalogs oft blockieren.",
+Die größte Hürde ist, dass menschliche Abstimmungsprozesse und politische Interessen die Befüllung des Datenkatalogs oft blockieren.",,
 14,Berater,Globale Beratungsfirma,Beratung,"We had individual sessions of onboarding them onto the new tool and the new way of
 working. And it was just really about convincing them about, yeah, this is actually easier in
 the long run, it'll be better for you. And trying to get them to do it themselves as well, once
 or twice, so that they get a feel for it. That helped me get their buy-in. ",Vorarbeit ,"Individuelle Gespräche für einen Onboarding Prozess
-Überzeugungsareit lohnt sich - zeigt Wert zu einem späteren Zeitpunkt ",
+Überzeugungsareit lohnt sich - zeigt Wert zu einem späteren Zeitpunkt ",,
 14,Berater,Globale Beratungsfirma,Beratung,"So in FSI, as I said, since a lot of it is regulatory driven, a lot of it is just things that
 the bank has to do, or else they will have to let go of their license. So in FSI, it's less so, but
 we also serve the corporate industry, we also serve the Dutch public sector. And from what I
-can see, I definitely understand that this is a concern.",Pain Point,"In nicht-regulatorisch getriebenen Bereichen fehlt oft der zwingende Handlungsdruck, was zu Verzögerungen oder geringer Priorisierung bei wichtigen Dateninitiativen führt.",
+can see, I definitely understand that this is a concern.",Pain Point,"In nicht-regulatorisch getriebenen Bereichen fehlt oft der zwingende Handlungsdruck, was zu Verzögerungen oder geringer Priorisierung bei wichtigen Dateninitiativen führt.",,
 14,Berater,Globale Beratungsfirma,Beratung,"It depends on the state of maturity of the client and what they're looking for. So if they're
 a big bank, if they're systematic, they're regulated by the ECB, then they probably have a lot
 of this sorted already. We just need to go and verify, make sure everything's up and running
@@ -120,27 +120,27 @@ unfortunately, to be able to comment on it.",Reifegrad ,"Implementierungsaufwand
 
 Nicht ausgreifte Unternehmen/Banken, welche alles von Anfang an machen müssen, haben mehr Aufwand - brauchen mehr Zeit.
 
-",
+",,
 14,Berater,Globale Beratungsfirma,Beratung,"The answer that I gave previously for the one to two months is facilitated or made
 possible by the fact that we as a company have developed our own sort of best practice target
 architectures as well. Which is why we have something to fall back on, so we're not starting
 from scratch. Which is why we can come up with something quickly. Like we already have a target
-architecture in mind.",Vorarbeit ,"Unternehmen hat bereits seine Best Practice Zielarchitetktur, deshalb braucheten sie nur 1-2 Moante für die Implementierung und nicht mehrere Monate bis Jahre ",
+architecture in mind.",Vorarbeit ,"Unternehmen hat bereits seine Best Practice Zielarchitetktur, deshalb braucheten sie nur 1-2 Moante für die Implementierung und nicht mehrere Monate bis Jahre ",,
 15,Data Manager,IT Services,Externe Firma,"Implementation costs are probably on average probably two or three times, even five times
-of the license cost of a year. You do all that one.",Budget,Budget Implementierung 2-5x Lizenzkosten pro Jahr,
+of the license cost of a year. You do all that one.",Budget,Budget Implementierung 2-5x Lizenzkosten pro Jahr,,
 15,Data Manager,IT Services,Externe Firma," Then you draw up to say, that's the figure for
 particular use case, that many use case and you're trying to save enterprise that much. Because often most of this department have forecasted they need more manpower. They're
-struggling. Why they can't service something today.",Pain Point,"Oftmals braucht es mehr Humankapital als beim Use case, es braucht länger als gedacht",
+struggling. Why they can't service something today.",Pain Point,"Oftmals braucht es mehr Humankapital als beim Use case, es braucht länger als gedacht",,
 15,Data Manager,IT Services,Externe Firma,"Let's improve the tool. So those are the only companies. You look at any of the, I haven't seen
 in my 25 years of career that any of the tools have been implemented because somebody just
-wants to try whether the tool will be successful or not.",Pain Point,Implementierungsaufwand zu hoch um das Tool einfach mal auszuprobieren,
+wants to try whether the tool will be successful or not.",Pain Point,Implementierungsaufwand zu hoch um das Tool einfach mal auszuprobieren,,
 16,Data Lead,Private Equity,Externe Firma,"And this started with asking every single person in the company what they were using, what
 were the data sources that they had, what processes they were having in-house on the data,
 so where does it come from, how do you change it, or what do you do with those data, how
 do you package it into, I don't know, a PowerPoint or another report or even an Excel sheet
 where you compute stuff and everything. So it was mainly getting all the information about
 that and then understanding where we had duplicates, where we had data silos or stuff like
-that. So we also have like, we are regulated by the FINMA, so this has a lot of implications.",Vorarbeit ,"Status quo in der Firma schaffen - wo sind Doublikate, welche Prozesse ind aktuell am laufen etc. ",
+that. So we also have like, we are regulated by the FINMA, so this has a lot of implications.",Vorarbeit ,"Status quo in der Firma schaffen - wo sind Doublikate, welche Prozesse ind aktuell am laufen etc. ",,
 16,Data Lead,Private Equity,Externe Firma,"And the thing is that you have contracts with clients that the client team is not necessarily
 allowed to look at. So it's only the compliance and legal team that can look at it. But at the
 same time, the client team needs to know how much the client has invested and what.
@@ -148,24 +148,24 @@ And then you get those data on an ad hoc basis, basically when you ask the legal
 this should normally be accessible for the client team, for example. That's a very trivial
 example, but it's kind of the, it sounds kind of a, I don't know, 2010 problem, but in the end,
 in 2025, it's still a problem, like having those data silos due to regulations or due to other stuff
-as well.",Pain Point,"Die Herausforderung ist, regulatorisch bedingte Datensilos aufzulösen, ohne Sicherheits- oder Compliance-Vorgaben zu verletzen",
+as well.",Pain Point,"Die Herausforderung ist, regulatorisch bedingte Datensilos aufzulösen, ohne Sicherheits- oder Compliance-Vorgaben zu verletzen",,
 16,Data Lead,Private Equity,Externe Firma,"So there are a lot of improvements to do, but at least it's a first tool that they can
 use and that can already improve their way of working and also serve as a marketing tool, I
-would say.",Weiterentwicklung nach der Implementierung ,Auch nach der Implementierung immernoch Verbesserungen notwenig - iterativer Prozess ,
+would say.",Weiterentwicklung nach der Implementierung ,Auch nach der Implementierung immernoch Verbesserungen notwenig - iterativer Prozess ,,
 16,Data Lead,Private Equity,Externe Firma,"What could go a bit, what is a bit more difficult sometimes is that, you know, especially in
 finance, but I would say maybe there are other industries that are the same, but they have a
 strong bond to Excel. And they also have the way of thinking of Excel, which is that I can access
 whenever I want a specific row, column combination. So if I want 832, then I can have 832
-number.",Pain Point,"Die Herausforderung ist, dass die Excel-geprägte Denkweise vielen den Umstieg auf strukturierte, kontrollierte Datensysteme erschwert",
+number.",Pain Point,"Die Herausforderung ist, dass die Excel-geprägte Denkweise vielen den Umstieg auf strukturierte, kontrollierte Datensysteme erschwert",,
 16,Data Lead,Private Equity,Externe Firma,"Yeah, sure, sure. So I think when I arrived, they already had kind of the database or let's
 say an Excel table, I would say, more than a database because they had already the columns
 that they wanted to visualize. They had an idea of what they would put where and kind of a
 vision of what the dashboard will be used for and for who as well and who will use it and
 everything.",Vorarbeit ,"Es wurde schon Vorarbeit geleistet:
 Es existiert eine Datenbasis und auch schon eine Strategie wie sie es
-visualisieren möchten",
+visualisieren möchten",,
 16,Data Lead,Private Equity,Externe Firma,"So I think it takes this kind of learning and training time and it
-shouldn't be underestimated at least on my opinion.",Volle / Restliche Implementierung,"Es braucht Angewöhnungszeit ans neue Tool, darf nicht unterschätzt werden ",
+shouldn't be underestimated at least on my opinion.",Volle / Restliche Implementierung,"Es braucht Angewöhnungszeit ans neue Tool, darf nicht unterschätzt werden ",,
 4,Senior Partner,Globale Beratungsfirma,Beratung,"Und jetzt hast du dann halt natürlich ein Data Catalog Problem. Weil du willst ja sagen, ich
 möchte diese Daten auffindbar machen. Ich möchte diese Daten auch dokumentieren und
 möchte sie für eine globale Organisation nutzbar machen.
@@ -173,14 +173,14 @@ Dann hast du wiederum zwei Probleme, die ganz wichtig sind. Das eine ist, wer is
 der Data Owner? Wer ist eigentlich zuständig für diese Daten?
 Und das sollte nie IT sein, sondern es sollten immer die Fachleute sein, zum Beispiel die
 Operators, die sagen, wir sind die Verantwortlichen dafür, dass diese Sensoren sauber sind
-und dass die Definitionen der Variablen korrekt sind.",Pain Point,"Ein zentraler Engpass ist die fehlende fachliche Datenverantwortung – ohne klar benannte Data Owner aus dem Fachbereich bleibt der Datenkatalog unvollständig, unzuverlässig und schwer nutzbar",
+und dass die Definitionen der Variablen korrekt sind.",Pain Point,"Ein zentraler Engpass ist die fehlende fachliche Datenverantwortung – ohne klar benannte Data Owner aus dem Fachbereich bleibt der Datenkatalog unvollständig, unzuverlässig und schwer nutzbar",,
 17,Managing Partner,Globale Beratungsfirma,Beratung,"And if, you know, you probably have to make a few tweaks
 to your processes and maybe think about your user roles, who's responsible for it, and okay,
 so let's make some tweaks after the pilot, then we move on to the next one. So that kind of
 solving individual problems one by one, using the combination of the technology, but also the
-people process governance that needs to sit around it Yeah, yeah.",Weiterentwicklung nach der Implementierung ,"Iterativer Prozess, Anpassungen wenn noch nicht ganz erfolgreich",
+people process governance that needs to sit around it Yeah, yeah.",Weiterentwicklung nach der Implementierung ,"Iterativer Prozess, Anpassungen wenn noch nicht ganz erfolgreich",,
 17,Managing Partner,Globale Beratungsfirma,Beratung,"And where is it? And you'd be amazed by how many organisations have no clue about the
-kind of data that they're handling, where it sits, which applications it sits in.",Pain Point,Viele Unternehmen haben keine Ahnung von ihre Daten ,
+kind of data that they're handling, where it sits, which applications it sits in.",Pain Point,Viele Unternehmen haben keine Ahnung von ihre Daten ,,
 17,Managing Partner,Globale Beratungsfirma,Beratung,"We've got issues with quality or consistency or standardisation, or we don't know what we've
 got and where we've got it, or we've got a big risk related to privacy, for example, or
 information security, and again, sometimes that's the symptom. We don't know what we've
@@ -188,16 +188,16 @@ got and where we've got it, but actually the solution to that is often start wit
 what data you've got and classifying it and using some domain structures to do that. Let's do
 that in the catalogue.",Pain Point,"Unternehmen wissen oft nicht, welche Daten sie haben und wo sie liegen.
 Das führt zu Problemen bei Qualität, Standardisierung und Datenschutz.
-Ohne klare Datenübersicht steigen Risiken und der Aufwand für Kontrolle.",
+Ohne klare Datenübersicht steigen Risiken und der Aufwand für Kontrolle.",,
 18,Data Lead,Globale Beratungsfirma,Beratung,"Das kann man der IT geben, die installieren das in ein paar Wochen und dann läuft das. Aber
 das Ding zum Fliegen bringen, das ist das Schwierige. Das braucht User Adoption, das braucht
-Communication, das braucht Trainings.",Volle / Restliche Implementierung,"Implementierung in ein paar Wochen gemacht aber es braucht Anpassung, Trainings und Kommunikation um es am laufen zu halten",
+Communication, das braucht Trainings.",Volle / Restliche Implementierung,"Implementierung in ein paar Wochen gemacht aber es braucht Anpassung, Trainings und Kommunikation um es am laufen zu halten",,
 18,Data Lead,Globale Beratungsfirma,Beratung,"Und während dem Onboarding kostet das eben ein Tool, konstant. Und wenn man es dann
 nicht zum Fliegen bringt, weil es einfach nicht gebraucht wird, dann lohnt es sich einfach nicht,
-das zu machen.",Budget,Wärend der Implementierung ständig mit Kosten rechnen,
+das zu machen.",Budget,Wärend der Implementierung ständig mit Kosten rechnen,,
 18,Data Lead,Globale Beratungsfirma,Beratung,"Und wenn es nicht in den täglichen Prozessen gebraucht werden kann und es die täglichen Prozesse nicht
 unterstützt, dann ist meistens der Erfolg von einem solchen Tool relativ klein, weil es oft dann
-auch vielleicht einen Zusatzaufwand bedeutet, Datenpflege zu machen.",Pain Point,"Negativbeispiel - wenn das Tool nicht täglich gebraucht wird, dann ist Zusatzaufwand für Datenpflege zu gross, muss vorher klar sein",
+auch vielleicht einen Zusatzaufwand bedeutet, Datenpflege zu machen.",Pain Point,"Negativbeispiel - wenn das Tool nicht täglich gebraucht wird, dann ist Zusatzaufwand für Datenpflege zu gross, muss vorher klar sein",,
 18,Data Lead,Globale Beratungsfirma,Beratung,"Also in der Regel bei uns beginnt es mit einem Sounding. Da kommt dann einer mit einer
 Idee. Das kann aus der IT kommen, das kann aus irgendwoher kommen und das wird dann
 mal zusammen in einem Board, in einem Sounding-Board besprochen. Das Sounding-Board
@@ -205,7 +205,7 @@ besteht natürlich aus dem, der die Idee bringt, dann besteht es aus unserem Chi
 Officer, der quasi die Technologie vertritt, unser Chief Information Officer, der die IT vertritt
 und dann noch Vertreter aus dem Business, also quasi Leute, die auf der Business-Seite
 stehen, das Business verstehen, aber auch oft schon mit Technologie-Seite
-zusammengearbeitet haben.",Vorarbeit ,"Vor der Implementierung wird ein Sounding gemacht, mit Leuten aus der Bsusinessseite, können aber auch aus der IT kommen",
+zusammengearbeitet haben.",Vorarbeit ,"Vor der Implementierung wird ein Sounding gemacht, mit Leuten aus der Bsusinessseite, können aber auch aus der IT kommen",,
 18,Data Lead,Globale Beratungsfirma,Beratung,"Das sind meistens Mittelmanagementfunktionen und Topmanagementfunktionen, die da
 besprechen. Und dort ist es nicht so schlimm, weil, ja, die sind teuer, aber die sind für das da.
 Sobald du eine Projektorganisation aufbaust, die eine Umsetzung macht, kostet das viel mehr,
@@ -213,68 +213,68 @@ weil eine Projektorganisation am Laufen zu halten, ist einfach teuer.
 Und dort geht es in die Umsetzung, was mal umgesetzt ist und wieder neu gebaut werden
 muss, ist teuer. Das heisst, man macht sich lieber zuerst gut Gedanken darum, klärt die Politik
 ab, bevor man ein Projekt startet und legt dann los. Wenn das Projekt startet und die Politik
-erst dann in Schwung kommt, ist es meistens nicht das Optimale für den Nahtgang.",Vorarbeit ,"Zuerst gute Vorarbeit leisten - alles was wiederrholt werden muss, ist aufwändig und teuer ",
-20,CEO,Beratungsfirma,Beratung,"Das heisst, was passiert in einem Start Procedure, wenn du starten möchtest,
+erst dann in Schwung kommt, ist es meistens nicht das Optimale für den Nahtgang.",Vorarbeit ,"Zuerst gute Vorarbeit leisten - alles was wiederrholt werden muss, ist aufwändig und teuer ",,
+20,CEO,Beratungsfirma,Beratung,"CEO: Das heisst, was passiert in einem Start Procedure, wenn du starten möchtest,
 transformieren, da können ja tausende von Linien auf Code sein, die extrem viele
 Informationen drin haben, das ist aber sehr, sehr schwierig, um zu diesen Informationen zu
 kommen. Und dort, finde ich, sind wirklich Schwierigkeiten.
-LJ: Das sind Schwierigkeiten, von der Implementierung her, oder?
-Nicht nur von der Implementierung, du musst Tools dazu haben, die ein Start Procedure
+Interviewer: Das sind Schwierigkeiten, von der Implementierung her, oder?
+CEO: Nicht nur von der Implementierung, du musst Tools dazu haben, die ein Start Procedure
 lesen können, ein Oracle Package lesen können, andere Daten lesen können, wo Daten
 transformiert werden, die müssen die Logik interpretieren können, und, und, und, und dann
-vielleicht auch noch die Lineage abbilden dazu. ",Pain Point,"Die technische Komplexität und fehlende geeignete Tools erschweren es massiv, Transformationslogiken aus Start Procedures, Oracle Packages oder anderen Systemen auszulesen und nachvollziehbar zu dokumentieren",
+vielleicht auch noch die Lineage abbilden dazu. ",Pain Point,"Die technische Komplexität und fehlende geeignete Tools erschweren es massiv, Transformationslogiken aus Start Procedures, Oracle Packages oder anderen Systemen auszulesen und nachvollziehbar zu dokumentieren",,
 20,CEO,Beratungsfirma,Beratung,"Das Problem ist nicht nur, dass es stehen bleibt, der Nutzen ist dann auch nicht dort. Du
 kannst die Informationen alle sammeln, das ist eine Fliessarbeit, aber die Frage ist, was ist der
 Nutzen des Ganzen? Was bringt es, wenn du all die Informationen hast? ",Pain Point,"Wenn man versucht alles zusammen zu Implementieren, verrennt man sich und das Projekt bleibt stehen, dann  sieht man den Nutzen nicht mehr
-",
+",,
 20,CEO,Beratungsfirma,Beratung,"Wie bildest du das ab? Und da gibt es auch Tools dazu, die das machen, aber auch dort ist
 wieder eine relativ hohe Komplexität, um das dann wirklich durchgehend abzubilden. Also ich
-glaube wirklich, die grosse Schwierigkeit ist die Durchgängigkeit, dass du alles machen kannst.",Pain Point,"Der Prozess ist zu komplex, dass alles gleichzeitig gemacht werden kann",
+glaube wirklich, die grosse Schwierigkeit ist die Durchgängigkeit, dass du alles machen kannst.",Pain Point,"Der Prozess ist zu komplex, dass alles gleichzeitig gemacht werden kann",,
 20,CEO,Beratungsfirma,Beratung,"Also gerade wenn du jetzt Collibra nimmst als Marktführer, in diesem Bereich, auch dort habe
 ich von verschiedensten Firmen schon gehört, die brauchen extrem lange, bis sie etwas
-implementiert haben.",Volle / Restliche Implementierung,Auch Collibra braucht extrem lange bis sie so etwas omplementiert haben,
+implementiert haben.",Volle / Restliche Implementierung,Auch Collibra braucht extrem lange bis sie so etwas omplementiert haben,,
 20,CEO,Beratungsfirma,Beratung,"Was machst du automatisiert, was machst du manuell? Was kannst du überhaupt
-automatisiert machen? Wir, also XXX, haben unseren eigenen Data Catalog aufgebaut, wir
+automatisiert machen? Wir haben unseren eigenen Data Catalog aufgebaut, wir
 haben ein vollständiges Datenmodell, wir haben das auf einer Standartenplattform
 implementiert.
 Dort ist die Schwierigkeit zum wieder die Daten zu connecten, also das ganze Harvesting zu
 machen und dann auch die entsprechenden Ressourcen von den Firmen zu bekommen, um
 so etwas zu machen. Respektive auch dort, die Ressourcen sind nicht nur die Leute verfügbar,
 sondern auch die Zeitdauer, die es braucht, um so etwas zu implementieren. Ich glaube, da
-sind die Erwartungen zum Teil extrem hoch.",Pain Point,"Automatisierung stösst an Grenzen, weil es schwierig ist, die nötigen Datenquellen anzubinden und gleichzeitig ausreichend qualifizierte Ressourcen mit genügend Zeit aus den Fachbereichen bereitzustellen – bei oft unrealistisch hohen Erwartungen",
+sind die Erwartungen zum Teil extrem hoch.",Pain Point,"Automatisierung stösst an Grenzen, weil es schwierig ist, die nötigen Datenquellen anzubinden und gleichzeitig ausreichend qualifizierte Ressourcen mit genügend Zeit aus den Fachbereichen bereitzustellen – bei oft unrealistisch hohen Erwartungen",,
 20,CEO,Beratungsfirma,Beratung,"Oder nachführen. Du bist ständig am aktualisieren. Du kannst nicht sagen, ich fange hier an
 und dann bin ich fertig.
 Denn, wenn du sagst, jetzt bin ich fertig, ist dein Datenkatalog, dein Data-Dictionary, nicht
-mehr up-to-date. Dann hast du die Änderungen verpasst. Das geht nicht.",Weiterentwicklung nach der Implementierung ,"Auch nach der Implementierung muss ständig aktualisiert werden, sonst verpasst man wichtige Änderungen und bleibt stehen",
+mehr up-to-date. Dann hast du die Änderungen verpasst. Das geht nicht.",Weiterentwicklung nach der Implementierung ,"Auch nach der Implementierung muss ständig aktualisiert werden, sonst verpasst man wichtige Änderungen und bleibt stehen",,
 21,Senior Datra Product Manger,Agrarindustrie,Externe Firma,"Ja, also die größte Herausforderung ist, das Management zu überzeugen, dass das wichtig
 ist. Und das dauert meiner Meinung nach sehr lange. Wenn die Entscheidung getroffen ist,
-dass das gebraucht wird und dass das wichtig ist, dann geht es relativ schnell.",Pain Point,"EDC: lange Überzeugungsarbeit beim Management, implementiert ist dann schnell",
+dass das gebraucht wird und dass das wichtig ist, dann geht es relativ schnell.",Pain Point,"EDC: lange Überzeugungsarbeit beim Management, implementiert ist dann schnell",,
 21,Senior Datra Product Manger,Agrarindustrie,Externe Firma,"Also bei Informatika, da hat es bei Databricks, die Integration ist super, das dauert zwei
 Wochen, da kann man sich das anschauen. Die technische Komponente ist nicht das Thema,
 sondern das zu verankern im Management, dass das wichtig ist und dass das gebraucht wird
 und warum und denen zu erklären, warum das wichtig ist. Also das ist die generelle
-Digitaltransformationsproblematik, würde ich sagen.",Pain Point,"Verankerung im Management ist die Schwierigkeit bereits vor der Implementierung und Einführung, die Wichtigkeit wird oft nicht gesehen - Datentransformationsproblematik",
+Digitaltransformationsproblematik, würde ich sagen.",Pain Point,"Verankerung im Management ist die Schwierigkeit bereits vor der Implementierung und Einführung, die Wichtigkeit wird oft nicht gesehen - Datentransformationsproblematik",,
 21,Senior Datra Product Manger,Agrarindustrie,Externe Firma,"Ja, absolut nur. Bevor ich in das Datenteam gewechselt bin, habe ich für Fendt Europa
 Digitaltransformation in Sales und Marketing gemacht und da bin ich immer wieder an diese
 Grenzen gestoßen, das Knowledge Sharing und auch die Bereitschaft, sich mit dem Thema
 auseinander zu setzen. Die Berührungsängste sind total hoch und das ist wirklich so, man
-braucht einen Erklärbär.",Pain Point,"Leute haben von Grund aus Berührungsängst mit dem Thema, der Wissenstandard und die Bereitschaft sich mit dem Thema auseinanderzusetzen ist sehr tief, es braucht eine Person welche alles erklären kann",
+braucht einen Erklärbär.",Pain Point,"Leute haben von Grund aus Berührungsängst mit dem Thema, der Wissenstandard und die Bereitschaft sich mit dem Thema auseinanderzusetzen ist sehr tief, es braucht eine Person welche alles erklären kann",,
 22,Chief Data Officer,Bank,Externe Firma,"Isn't that you need to watch as a whole because if you
 don't have EDC, you cannot do data quality.
-If you don't have data quality, you cannot do advanced analytics and AI. ",Pain Point,Ohne grundlegende Bausteine wie einen Data Catalog (EDC) und gesicherte Datenqualität fehlt die Basis – fortgeschrittene Analysen und KI sind damit kaum umsetzbar,
-22,Chief Data Officer,Bank,Externe Firma,But after it's ongoing work.,Weiterentwicklung nach der Implementierung ,-,
-6,Data Manager,Versicherungsfirma,Externe Firma,Die Adoption ist aber wahnsinnig schwierig. Wahrscheinlich habt ihr das auch überall gehört.,Volle / Restliche Implementierung,Implementierung ist sehr anspruchsvoll,
+If you don't have data quality, you cannot do advanced analytics and AI. ",Pain Point,Ohne grundlegende Bausteine wie einen Data Catalog (EDC) und gesicherte Datenqualität fehlt die Basis – fortgeschrittene Analysen und KI sind damit kaum umsetzbar,,
+22,Chief Data Officer,Bank,Externe Firma,But after it's ongoing work.,Weiterentwicklung nach der Implementierung ,-,,
+6,Data Manager,Versicherungsfirma,Externe Firma,Die Adoption ist aber wahnsinnig schwierig. Wahrscheinlich habt ihr das auch überall gehört.,Volle / Restliche Implementierung,Implementierung ist sehr anspruchsvoll,,
 6,Data Manager,Versicherungsfirma,Externe Firma,"Und als
 ich dann in diesem Datenthema unterwegs war, ich habe zunächst einmal die KI-Einheit in der
 IT gegründet und aufgebaut. Nur wir wollten KI machen und sind halt immer wieder vor die
 gleichen Probleme gerannt.
 So, ey, welche Daten haben wir eigentlich? Wo müssen wir hingreifen? Welche
-Verantwortlichkeiten haben wir?",Pain Point,Wissen über Daten und Verantwortlichkeiten fehlen,
+Verantwortlichkeiten haben wir?",Pain Point,Wissen über Daten und Verantwortlichkeiten fehlen,,
 6,Data Manager,Versicherungsfirma,Externe Firma,"Sobald du Qualitätskriterien hinterlegt hast, sobald klar ist, wer dafür verantwortlich ist,
 sobald die Definitionen der Attribute und der Fachlichkeiten drin ist, sobald SLAs existieren,
 die dir sagen, was kannst du denn eigentlich erwarten, wenn du dieses Produkt konsumierst.
 Und vieles mehr. Vieles an Data Governance Themen, die man erst mal so relativ abstrakt
-findet, die kann man dort in diesem Datenprodukt implementieren.",Vorarbeit ,"Erst wenn Qualitätskriterin hinterlegt , Definitionen der Attribute und Fachlichkeiten festgelegt worden sind und SALs existieren, kann man mit der Implementierung des Datenprodukts beginnen ",
+findet, die kann man dort in diesem Datenprodukt implementieren.",Vorarbeit ,"Erst wenn Qualitätskriterin hinterlegt , Definitionen der Attribute und Fachlichkeiten festgelegt worden sind und SALs existieren, kann man mit der Implementierung des Datenprodukts beginnen ",,
 6,Data Manager,Versicherungsfirma,Externe Firma,"Die IT ist die IT und deswegen ist es auch durchaus so ein Punkt, dass man sich als ITler
 letztendlich in der Organisation auch durchboxen muss, dass man halt, weil man ja plötzlich
 fachliche Fragestellungen hat, weil wir sprechen ja viel über fachliche Datenmodelle als über
@@ -282,13 +282,13 @@ technische Datenmodelle.
 Die technischen Datenmodelle sind für Schnurz. Ich meine, das kann irgendwie eine
 Applikation für sich selber machen, das interessiert mich fast gar nicht. Und diese Kenntnis
 oder diese Erkenntnis des Unternehmens, dass halt, okay, da ist irgendwie ein ITler und der
-kümmert sich jetzt plötzlich über fachliche Datenmodelle, das ist schon echt seltsam.",Pain Point,"IT-Abteilungen stoßen auf Widerstand, wenn sie fachliche Verantwortung übernehmen wollen, denn das traditionelle Rollenverständnis sieht IT nicht als Treiber fachlicher Datenmodelle, obwohl genau das für Datenprojekte entscheidend wäre",
+kümmert sich jetzt plötzlich über fachliche Datenmodelle, das ist schon echt seltsam.",Pain Point,"IT-Abteilungen stoßen auf Widerstand, wenn sie fachliche Verantwortung übernehmen wollen, denn das traditionelle Rollenverständnis sieht IT nicht als Treiber fachlicher Datenmodelle, obwohl genau das für Datenprojekte entscheidend wäre",,
 6,Data Manager,Versicherungsfirma,Externe Firma,"Und das ist tatsächlich so die Hoffnung, endlich auch ein bisschen breitere Mengen an
 Menschen im Konzern zu erreichen. Weil letztendlich das Problem ist, gar nicht die einzelnen
 kleinen Use Cases zu finden und mit denen das umzusetzen. Das haben wir geschafft, aber
-das zu skalieren, das haben wir bislang nicht geschafft.",Pain Point,Zu skalieren was bis jetzt eine Herausforderung und konnte nicht erreicht werden ,
+das zu skalieren, das haben wir bislang nicht geschafft.",Pain Point,Zu skalieren was bis jetzt eine Herausforderung und konnte nicht erreicht werden ,,
 6,Data Manager,Versicherungsfirma,Externe Firma,"Okay. Nur als Heuristik vielleicht, es steigt mit der Komplexität der Systematik. Umso mehr Systeme du hast, umso komplexer die sind, umso schlechter auch die Standardisierung der Anbindung ist, umso schwieriger wird das Projekt und umso länger dauert es.
-",Volle / Restliche Implementierung,"Je komplexer systematik, desto länger dauert Implementierungsprozess",
+",Volle / Restliche Implementierung,"Je komplexer systematik, desto länger dauert Implementierungsprozess",,
 6,Data Manager,Versicherungsfirma,Externe Firma,"Und zwar, was wir aktuell auch machen, ist, wir schneiden die Rollen im Datenumfeld neu.
 Und in den neuen Rollenbeschreibungen werden wir den leider in Anführungsstrichen
 vorgehen, dass die es zu tun haben. Und das bedeutet, für die wirkliche Skalierung im
@@ -296,27 +296,27 @@ gesamten Haus brauchst du sinnvolle, machbare Vorgaben.
 Wo die Data-Enthusiasten, oder vielleicht auch nicht so große Enthusiasten, aber die Data-
 Leute im Haus, diese Vorgaben haben. Sie wissen, oh shit, jetzt muss ich was machen. Aber
 wo die gleichzeitig auch sehen, okay, das macht total Sinn.
-Und das wird mir auch was bringen. Ja, es ist ein Aufwand, aber es bringt schon was.",Vorarbeit ,"Die Rollen im Datenumfeld werden neu definiert und mit klaren, umsetzbaren Aufgaben versehen, sodass alle Beteiligten wissen, was zu tun ist und gleichzeitig den Mehrwert ihres Beitrags erkennen",
+Und das wird mir auch was bringen. Ja, es ist ein Aufwand, aber es bringt schon was.",Vorarbeit ,"Die Rollen im Datenumfeld werden neu definiert und mit klaren, umsetzbaren Aufgaben versehen, sodass alle Beteiligten wissen, was zu tun ist und gleichzeitig den Mehrwert ihres Beitrags erkennen",,
 8,Experte,SAP,EDM / EDC Anbieter,"Weil wenn man ein Migrationsprojekt hat, muss man sich auf jeden Fall um die Daten
 kümmern. Weil man bereinigt Stammdaten, man bereitet alles vor, alle Dupletten raus und
 so weiter und so fort. Überlegt sich auch im Zielsystem, wie die optimale Struktur dann ist der
-Daten",Vorarbeit ,"Vorbereitung auf Migrationsprojekt essentiell, optimale Struktur der Daten und Strategie muss vor Implementierung stehen",
+Daten",Vorarbeit ,"Vorbereitung auf Migrationsprojekt essentiell, optimale Struktur der Daten und Strategie muss vor Implementierung stehen",,
 24,Head of Data EMEA,Globale Bank,Externe Firma,"So you start by this. So you say, before I even talk about the tool, I'm going to tell you
 what it is. In what way it's going to be helpful for you and how little effort you will need to
-make.",Vorarbeit ,"Vor der Implementierung erzählen, was Tool bewirken wird und wo die Vorteile sind ",
+make.",Vorarbeit ,"Vor der Implementierung erzählen, was Tool bewirken wird und wo die Vorteile sind ",,
 24,Head of Data EMEA,Globale Bank,Externe Firma,"One, what is this? Why is this relevant for me? What are the benefits for me?
 The me meaning them, not me. What is this? Why is this relevant to them?
 If you cannot answer those four questions, your presentation is doomed to fail. Or if you
 realize at that point that it requires a gigantic effort from people, well, already most people
 are overworked and most departments are understaffed. You have to take that. ",Pain Point,"Leute an Board holen bevor Aufwand präsentiert wird - viele Leute sind schon überarbeitet
-Wenn der Nutzen für die Zielgruppe nicht klar ist und der Aufwand hoch, scheitert jede Initiative – denn überlastete Teams investieren nicht in etwas, das für sie keinen erkennbaren Mehrwert bringt",
+Wenn der Nutzen für die Zielgruppe nicht klar ist und der Aufwand hoch, scheitert jede Initiative – denn überlastete Teams investieren nicht in etwas, das für sie keinen erkennbaren Mehrwert bringt",,
 24,Head of Data EMEA,Globale Bank,Externe Firma,"And delivering good messages in very short periods of time is highly appreciated. So
 getting to the habit of having a one-pager where you deliver the main message in five
 minutes, then you can get into the detail. But if you do not get their attention, if you do not
 get their curiosity, it will be wasted time.",First Value ,"Zwischenergebnisse in einem One Pager festhalten, damit MA motiviert bleiben und ihren Fortschritt sehen, diese in kurzen Zeitspannen präsentieren
-",
+",,
 5,Data & AI Experte,Beratungsfirma,Beratung,"Data catalog technologiegetrieben eingeführt - Das war relativ einfach, weil es die Analysten alle sehr schnell aufgegriffen haben. Es wurde
-dann aber schnell, also dann kam auch das ganze Thema GDPR ja mit rein bei uns. .",Volle / Restliche Implementierung,"Die technologische Implementierung des EDC ging relativ schnell und einfach, da Analysten den Prozess verstenden haben",
+dann aber schnell, also dann kam auch das ganze Thema GDPR ja mit rein bei uns. .",Volle / Restliche Implementierung,"Die technologische Implementierung des EDC ging relativ schnell und einfach, da Analysten den Prozess verstenden haben",,
 5,Data & AI Experte,Beratungsfirma,Beratung,"Weil meine Erfahrung ist, kleine Unternehmen, da ist es eher einfach,
 weil die nicht so viele Datentöpfe haben, da gibt es nicht so viele Menschen, da kann man
 leicht an alle Menschen hin.
@@ -325,15 +325,15 @@ Mittelstand sprechen, da ist meine Erfahrung so, dass viele nicht bereit sind, i
 Catalog zu investieren, weil viele Data Catalog-Lösungen doch nicht billig sind. Da ist oft ein
 Widerstand, da wirklich rein zu investieren.",Pain Point,"
 Implementierung bei grösseren Unternehmen  sind Ressourcenintensiver und benötigen einen grösseren Aufwand - Motivation dementsprechen tiefer
-",
+",,
 5,Data & AI Experte,Beratungsfirma,Beratung,"in Enterprise ist es für
 die Data Catalog-Firmen super einfach reinzukommen. Da sellen die sehr, sehr leicht, weil da
 ihr Preis wieder eher niedrig ist und die alle glauben, dass der Need da ist. Da gibt es aber
 wirklich dieses große Problem, wie bringt man das Data Catalog so integriert, dass er mit
-möglichst vielen Datenquellen connectet.",Pain Point,"Angebot ohne konkreter Use Case, schwierig zu implementieren ",
+möglichst vielen Datenquellen connectet.",Pain Point,"Angebot ohne konkreter Use Case, schwierig zu implementieren ",,
 5,Data & AI Experte,Beratungsfirma,Beratung,"Also technologisch würde ich sagen, kann man an alle eigentlich einen Haken hinmachen. So,
 dann ist für mich immer die zweite Frage, wie sieht die Hilfe bei der Integration aus? Da ist es
-wieder so, dass sie schon sehr unterschiedlich sind.",Pain Point,technologischer Aufwand nicht so gross aber Integration immer schwierig,
+wieder so, dass sie schon sehr unterschiedlich sind.",Pain Point,technologischer Aufwand nicht so gross aber Integration immer schwierig,,
 5,Data & AI Experte,Beratungsfirma,Beratung,"Was ich immer sage ist, du brauchst für so einen
 Data-Catalog in der Firma einen Owner, der dieses Tool und die Kultur rund um diesen Data-
 Catalog und Aktivitäten macht. Ob das jetzt jemand aus dem Data-Governance-Team ist oder
@@ -347,49 +347,49 @@ Okay, also meine Erfahrung ist, dass es erstmal ein, wer diese ganze Ownership h
 aus meiner Sicht ziemlich egal, wo der irgendwo ist. Es muss eine kommunikationsstarke
 Person sein. ",Reifegrad ,"Owner muss bestimmt werden, Data-maturity Level der Firma herausfinden (betrifft dann auch Geschwindigkeit der Implementierung und Integration)
 
-Andere sagen Owner muss aus Busniess und NICHT aus IT kommen, er meint es sei egal - kleiner Wiederspruch",
+Andere sagen Owner muss aus Busniess und NICHT aus IT kommen, er meint es sei egal - kleiner Wiederspruch",,
 5,Data & AI Experte,Beratungsfirma,Beratung,"Das ist das, was ich sehe in der Firma, die schon wirklich in der Lage ist, datengetrieben zu
 denken, die Entscheidungen auf Daten basieren. Für die ist es einfach, einen Data-Catalog zu
 verwenden. Wenn ich ein niedriges Data Maturity Level habe, wenn die Firmen noch nicht
-verstehen, welchen Wert Daten haben, dann hat der Data-Catalog es echt schwer.",Reifegrad ,Implementierung EDC macht erst ab einem gewissen Reifegrad der Daten sinn. ,
+verstehen, welchen Wert Daten haben, dann hat der Data-Catalog es echt schwer.",Reifegrad ,Implementierung EDC macht erst ab einem gewissen Reifegrad der Daten sinn. ,,
 5,Data & AI Experte,Beratungsfirma,Beratung,"Da habe ich gerade vor kurzem den ersten interessanten Ansatz bei einem Beratungsunternehmen gesehen,
 die sozusagen, bevor sie einen Data-Catalog der Firma empfehlen, einen Data Maturity
 Assessment machen und sagen, um damit es Sinn macht, einen Data-Catalog einzuführen,
 müsst ihr erst auf einem gewissen Data Maturity Level sein. Wenn ihr da nicht seid, müssen
 wir erst mal die und die Trainings machen, müssen wir erst mal Data Literacy usw. in der Firma
-einführen, etablieren und erst dann macht es Sinn, über den Data-Catalog zu sprechen.",Reifegrad ,"Data-Maturity identifizieren - erst ab einer gewissen Reife macht es Sinn zu implementieren, sonst braucht es Trainings und Daten Schulungen",
+einführen, etablieren und erst dann macht es Sinn, über den Data-Catalog zu sprechen.",Reifegrad ,"Data-Maturity identifizieren - erst ab einer gewissen Reife macht es Sinn zu implementieren, sonst braucht es Trainings und Daten Schulungen",,
 5,Data & AI Experte,Beratungsfirma,Beratung,"Das finde ich persönlich einen sehr guten Ansatz. Ansonsten ist die Gefahr, dass du Geld in
 ein teures Tool investierst, was die Firma nicht, weil sie einfach nicht auf diesem Maturity
-Level ist, nicht nutzen kann, nicht nutzt.",Pain Point,"Es besteht die Gefahr, dass Geld investiert wird, obwohl das Unternehmenn noch nicht den Reifegrad hat, und so das Tool keinen Nutzen hat",
-5,Data & AI Experte,Beratungsfirma,Beratung,"Ich nehme an, das geht Hand in Hand, oder? Also es ist ja ähnlich, oder es ist
+Level ist, nicht nutzen kann, nicht nutzt.",Pain Point,"Es besteht die Gefahr, dass Geld investiert wird, obwohl das Unternehmenn noch nicht den Reifegrad hat, und so das Tool keinen Nutzen hat",,
+5,Data & AI Experte,Beratungsfirma,Beratung,"Interviewer: Ich nehme an, das geht Hand in Hand, oder? Also es ist ja ähnlich, oder es ist
 genauso anwendbar mit dem Thema Data Catalog und allgemein Daten Management, oder?
 Also es ist ja sehr viel überschneidend, nehme ich an.
 
-MS: Richtig, ja.",Reifegrad ,"EDM und EDM verlangen einen gewissen Reifegrad, ansonsten macht die einführung des Tools keinen Sinn",
+Data & AI Experte: Richtig, ja.",Reifegrad ,"EDM und EDM verlangen einen gewissen Reifegrad, ansonsten macht die einführung des Tools keinen Sinn",,
 5,Data & AI Experte,Beratungsfirma,Beratung,"Und im Endeffekt geht es ja darum, dass ein Data Producer Ownership für seine
 Datenquelle und meistens auch noch irgendwie den Prozess, die Daten in den Data Lake oder
 wohin reinzubringen, übernimmt. Und ich sehe viele, sehr, sehr viele Organisationen, die Data
 Mesh einführen möchten, die genau daran scheitern, dass die Data Producers nicht bereit
 sind, die Ownerships für diesen Prozess, ihre Daten sammeln und das dann in den Data Lake
-reinschreiben, übernehmen.",Pain Point,Data Producers sind nicht bereit Data-Ownership zu übernehmen,
+reinschreiben, übernehmen.",Pain Point,Data Producers sind nicht bereit Data-Ownership zu übernehmen,,
 5,Data & AI Experte,Beratungsfirma,Beratung,"Übernehmen heißt nicht nur irgendwo hinschreiben, I'm the Owner, sondern auch
 wirklich bereit zu sein, wenn es mal ein Problem gibt, da zu investieren, eine Pipeline zu fixen,
-die Daten zu dokumentieren, ein Datenformat zu ändern, wenn nötig ist oder irgendwas.",Pain Point,Owner zu sein bringt viel Aufwand/Arbeit mit sich und deshalb möchte es niemand sein,
+die Daten zu dokumentieren, ein Datenformat zu ändern, wenn nötig ist oder irgendwas.",Pain Point,Owner zu sein bringt viel Aufwand/Arbeit mit sich und deshalb möchte es niemand sein,,
 7,Data Architect,Versicherungsfirma,Externe Firma,"So that's one of the expectation management that needs to be done typically by the
 enterprise architect team and the leadership team. So it's a long journey and a patient
-journey.",Volle / Restliche Implementierung,"Es ist Sache des Unternehenesgestaltungs und Führunsteams, was bedeuted es braucht viel Zeit ",
+journey.",Volle / Restliche Implementierung,"Es ist Sache des Unternehenesgestaltungs und Führunsteams, was bedeuted es braucht viel Zeit ",,
 7,Data Architect,Versicherungsfirma,Externe Firma,"The approach works so the approach is fine the only question is how patient is business
 because typically all business sponsors typically they invest their money in such projects right
 so be it the business function or the executive leadership right and if there is no tangible
 output on production then they start to feel a bit impatient or hesitant and start losing the
-trust on the team. ",Pain Point,"Genau weil es lange geht bis die ersten grossen First Value auftauchen gibt es viel Misstrauen, diesem muss mit  kleinen Erfolgen entgegengewirt werden",
+trust on the team. ",Pain Point,"Genau weil es lange geht bis die ersten grossen First Value auftauchen gibt es viel Misstrauen, diesem muss mit  kleinen Erfolgen entgegengewirt werden",,
 9,Chief Data Officer,Wirtschaftsprüfung,Beratung,"EDM, EDC braucht Zeit,
 umso grösser das Unternehmen, umso fragmentierter die IT-Infrastruktur, umso mehr Zeit
 brauche ich dafür, das heisst, wir reden hier wirklich von Jahren, mehrere Jahre, ein Projekt,
-um das alles aufzubauen, das kostet man zuerst einfach Geld, viel Geld,",Volle / Restliche Implementierung,"EDM und EDC braucht Zeit, vor allem bei grösseren Unternehmen muss bei einer Implementation mit mehrern Jahren gerechnet werden",
+um das alles aufzubauen, das kostet man zuerst einfach Geld, viel Geld,",Volle / Restliche Implementierung,"EDM und EDC braucht Zeit, vor allem bei grösseren Unternehmen muss bei einer Implementation mit mehrern Jahren gerechnet werden",,
 26,Data Executive,Finanzdienstleistungen,Externe Firma,"So like ideally, if I had endless time and endless money, I would spend time trying to work
 on all my data. But in a real world, you don't have that much budget. You don't have that
-much people to really focus on all the data.",Pain Point,"Es fehlen die Ressourcen, die Zeit und das Budget um etwas zu Implementieren",
+much people to really focus on all the data.",Pain Point,"Es fehlen die Ressourcen, die Zeit und das Budget um etwas zu Implementieren",,
 29,Geschäftsleitung,Collibra,EDM / EDC Anbieter,"But anyway, so you need to have at least three use cases identified. This is our
 recommendation between one to three. And then you need to prepare yourself for during
 the journey, you're going to come up with more use cases.
@@ -397,16 +397,16 @@ Because if you're six months or 12 months into your catalog initiative and only 
 start talking with those privacy people, then only then that use case of the process registry
 is going to come up. So what I mean to say is that to make this successful is that there's
 going to be a roadmap of use cases that you're going to be supporting with your catalog
-initiative. And every use case is going to depend on a persona in the organization",Vorarbeit ,Es wird empfolen 3 Use Cases zu indetifizieren. Ansonsten verliert man Zeit bis man nicht mehr mit nur privaten Personen spricht,
+initiative. And every use case is going to depend on a persona in the organization",Vorarbeit ,Es wird empfolen 3 Use Cases zu indetifizieren. Ansonsten verliert man Zeit bis man nicht mehr mit nur privaten Personen spricht,,
 30,Head of Community,IT Services,EDM / EDC Anbieter,"User Training sind es die Menschen, also am Ende mache ich ja Change
 Management, stell den Tool hin und ob die da Bock drauf haben, das zu nutzen, entscheiden
 die und ob sie da irgendwie offen für sind und also wirklich User Training, User Akzeptanz ist
-aus meiner Sicht so der typische Erfolgsfaktor für solche Themen.",Pain Point,"Ohne echte Nutzerakzeptanz und gezieltes Training scheitert selbst das beste Tool, denn ob es genutzt wird, entscheiden am Ende die Menschen, nicht die Technik",
+aus meiner Sicht so der typische Erfolgsfaktor für solche Themen.",Pain Point,"Ohne echte Nutzerakzeptanz und gezieltes Training scheitert selbst das beste Tool, denn ob es genutzt wird, entscheiden am Ende die Menschen, nicht die Technik",,
 30,Head of Community,IT Services,EDM / EDC Anbieter,"Masse an Daten, also wirklich dieses habe ich Ressourcen verfügbar,
 dass ich irgendwie eine kritische Masse an Daten da drin habe, weil wenn ich einmal in den
 Datenkatalog gehe und drei Abfragen mache und alle Daten, die ich eigentlich abfragen
-wollte, nicht gefunden habe, dann gehe ich kein zweites Mal zurück.",Pain Point,"Fehlt im Datenkatalog eine ausreichende Datenabdeckung, verlieren Nutzer schnell das Vertrauen und kehren im Zweifel nicht wieder zurück",
+wollte, nicht gefunden habe, dann gehe ich kein zweites Mal zurück.",Pain Point,"Fehlt im Datenkatalog eine ausreichende Datenabdeckung, verlieren Nutzer schnell das Vertrauen und kehren im Zweifel nicht wieder zurück",,
 30,Head of Community,IT Services,EDM / EDC Anbieter,"Das heißt, ich muss, das ist ja so ein Plattformgedanke, ich muss mindestens so eine minimal
 kritische Masse an Informationen finden, sonst macht mir das Tool keinen Spaß, bringt mir
 keinen Mehrwert und dann ist es für mich nicht nutzbar, habe ich einmal, vielleicht zweimal
-probiert und dann lasse ich es.",Pain Point,Ohne eine kritische Mindestmenge an relevanten Informationen liefert die Plattform keinen wahrnehmbaren Mehrwert und wird von den Nutzern schnell ignoriert,
+probiert und dann lasse ich es.",Pain Point,Ohne eine kritische Mindestmenge an relevanten Informationen liefert die Plattform keinen wahrnehmbaren Mehrwert und wird von den Nutzern schnell ignoriert,,

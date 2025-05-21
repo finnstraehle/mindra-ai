@@ -3,16 +3,15 @@
 1,Chief Data Officer,Globaler Brauereikonzern,Collibra Success Story,"But then if you're not so complex, you can probably do it in, I don't know, six months in terms of implementation.",Volle / Restliche Implementierung ,6,-,6 Monate wenn nicht zu komplex,,,,,,,,,,,,,,
 1,Chief Data Officer,Globaler Brauereikonzern,Collibra Success Story,"I would say probably over a year just in terms of the content of Collibra. Once we got to
 them, just putting in the system and then rolling it out was fine. The workflows were a bit
-clunky.",Volle / Restliche Implementierung ,12,-,nur collibra Set up: 1 Jahr,,,,,,,,,,,,,,
+clunky.",Volle / Restliche Implementierung ,12,-,nur Collibra Set up: 1 Jahr,,,,,,,,,,,,,,
 1,Chief Data Officer,Globaler Brauereikonzern,Collibra Success Story,"So in the workflows, we had business owners that, for instance, would create a new term or
 give a new definition or create a change in the EDM. So those workflows were a bit clunky, it
 took us a bit to get around it. And then it was the country's implementation, again, we kind
 of did it in one year, one year and a half, with each of the countries.
 ",Volle / Restliche Implementierung ,12,-,"Set up in den restl. Ländern: 1-1.5 Jahre
 Ursprüngliches Set up steht aber schon",,,,,,,,,,,,,,
-10,Data Executive,Versicherungsfirma,Collibra Success Story,"How long did that implementation take you in your specific case?
-(29:33 - 29:35)
-AH: Yeah, I would say a year.",Volle / Restliche Implementierung ,12,-,Implementierung: 1 Jahr ,,,,,,,,,,,,,,
+10,Data Executive,Versicherungsfirma,Collibra Success Story,"Interviewer: How long did that implementation take you in your specific case?
+Data Executive: Yeah, I would say a year.",Volle / Restliche Implementierung ,12,-,Implementierung: 1 Jahr ,,,,,,,,,,,,,,
 10,Data Executive,Versicherungsfirma,Collibra Success Story,"It was over a year to really get it to, I mean, we got it up and running in no time. But to
 really see the benefits and usage, it took about a year.",First Value ,12,-,First Value sehen und lernen zu Nutzen: 1 Jahre ,,,,,,,,,,,,,,
 10,Data Executive,Versicherungsfirma,Collibra Success Story, I think it depends on the complexity of the organization.,Volle / Restliche Implementierung ,-,-,-,,,,,,,,,,,,,,
@@ -73,7 +72,9 @@ wir andere Opportunities haben, die sich schon irgendwo innerhalb von 18 Monaten
 oder? Jetzt dieses Thema hier ist eigentlich drüber. Also ich glaube, das kriegst du wirklich
 sauber berechnet. Ich glaube, da spielst du von einem Payback, ich schätze mal drei Jahre,
 aber es ist wirklich, es ist ein Strategic Bet, Weil was jetzt auch viele merken jetzt kommt da
-diese ganze KI-Welle und so oder?",First Value ,24,-,"erste Paybacks: 2-3 Jahre
+diese ganze KI-Welle und so oder?",First Value ,24,-,"erste Paybacks: 2-3 Jahre, eher zu viel für
+Denner (>18 Monate)
+
 -> er würde immediate Payback nicht in  Vordergrund stellen (siehe Qualitativer Aufwand)",,,,,,,,,,,,,,
 2,IT Projektleiter,Detailhandel,Externe Firma,"Beim EDM, glaube ich, wird der Value erst über Zeit spürbar, wenn
 man dann Änderungen in der Systemarchitektur hat oder wenn man dann quasi ein System
@@ -84,7 +85,7 @@ Application Lifecycle Zeit von drei bis fünf Jahren spüren, der ist jetzt heut
 nicht so spürbar.",First Value ,36,60,"Erster Wert im Implementierungszyklus
 von 3-5 Jahren spühren, heute noch nicht spührbar
 ",,,,,,,,,,,,,,
-2,IT Projektleiter,Detailhandel,Externe Firma,"Ja, also jetzt bei unserer Firma, ich glaube das war irgendwo 6 bis 12 Monate bis sie entdeckt
+2,IT Projektleiter,Detailhandel,Externe Firma,"Ja, also jetzt bei dieser Firma, ich glaube das war irgendwo 6 bis 12 Monate bis sie entdeckt
 haben, aber dann hast du noch Kündigungsfristen und so. Ich weiss dann nicht wie lange diese
 Laufzeiten der Verträge waren, aber dann bist du dann schnell mal 12 bis 24 Monate in den
 Fenster drin, oder?",Volle / Restliche Implementierung ,6,24," 6-12 Monate bis sie den doppelten Dateneinkauf entdeckt haben
@@ -118,10 +119,10 @@ a six week project because it gets installed in the customer's environment.",Vol
 ein ca. 6 wöchiges Projekt",,,,,,,,,,,,,,
 14,Berater,Globale Beratungsfirma,Beratung,"Maybe a month or two long project. And for that, we'll develop it end-to-end and show you
 the value. And that is how we approach it.",Volle / Restliche Implementierung ,1,2,-,,,,,,,,,,,,,,
-14,Berater,Globale Beratungsfirma,Beratung,"And you just said that sometimes it's as short as one to two
+14,Berater,Globale Beratungsfirma,Beratung,"Interviewr: And you just said that sometimes it's as short as one to two
 months worth of a project. So that's almost the shortest duration I've heard. So it's
 interesting.
-At the end of the day, what I gave you is just essentially, so how a credit
+Berater: at the end of the day, what I gave you is just essentially, so how a credit
 risk model works is that you have your probability of default, your exposure to default, and
 your loss given default. You multiply the three to get the amount that you probably stand to
 lose if a client goes bankrupt. So for each of these components, there's a lot of underlying
@@ -160,8 +161,7 @@ hundreds of people across the business, because only one person knew the puzzle 
 particular piece, and he said, I live in this world. ",Vorarbeit ,6,-,Aufand: 6 Monate nur fürs Design von EDM ,,,,,,,,,,,,,,
 15,Data Manager,IT Services,Externe Firma,"In other places, probably
 six months is a hell of a lot of time. You can implement ERP for that time, and it took me that
-much to design, because I had to talk to hundreds of people to get the data. I took notes from each and every one, then actually designed it. I had to go through so many
-iterations of reviews, changes. Anytime you talk to one person, you get a piece of the puzzle",Vorarbeit ,6,-,mit hunderten von Leuten gesprochen um an Daten zu kommen  - 6 Monate ,,,,,,,,,,,,,,
+much to design, because I had to talk to hundreds of people to get the data. I took notes from each and every one, then actually designed it. I had to go through so many iterations of reviews, changes. Anytime you talk to one person, you get a piece of the puzzle",Vorarbeit ,6,-,mit hunderten von Leuten gesprochen um an Daten zu kommen  - 6 Monate ,,,,,,,,,,,,,,
 15,Data Manager,IT Services,Externe Firma,"It's a very, very complicated process of trying a business case, benefit summary. In fact, all
 this, I call it mumbo-jumbo, whatever you want to call it, itself will take some time longer than
 the project duration. Sometimes you're fighting for up to two years because you have a
@@ -171,13 +171,13 @@ this.",Pain Point,24,-,"Die Erstellung von Business Cases und Nutzenargumentatio
 15,Data Manager,IT Services,Externe Firma,"If you implement it, we took the bid, we ran the tender process
 for roughly another six months and they figured out, they awarded to something and then
 they cancelled it.",Pain Point,6,-,"Trotz aufwendiger Ausschreibungs- und Auswahlprozesse kann ein Projekt kurzfristig wieder gestoppt werden, was Zeit, Ressourcen und Vertrauen kostet",,,,,,,,,,,,,,
-15,Data Manager,IT Services,Externe Firma,"So to get first results out of doing stuff like that is like six to 12 months, you would say?
-VS: Yes. ",First Value ,12,-,1 Jahr für erste Resultate ,,,,,,,,,,,,,,
+15,Data Manager,IT Services,Externe Firma,"Interviewer: So to get first results out of doing stuff like that is like six to 12 months, you would say?
+Data Manager: Yes. ",First Value ,12,-,1 Jahr für erste Resultate ,,,,,,,,,,,,,,
 15,Data Manager,IT Services,Externe Firma,"You can actually do a particular use case or implementation of a particular business
 function in less than six months. You don't have to implement the data model for enterprise,
 the whole enterprise, because that itself is a big, very lengthy exercise that you could
 implement everything. Sometimes you say we do it agile way, like safer job or whatever, it's
-basically we start something slow and scale it over a period of time.",Volle / Restliche Implementierung ,6,-,"Man muss nicht gleich das gesamte unternehmensweite Datenmodell auf einmal umsetzen. Stattdessen kann man gezielt mit einem konkreten Anwendungsfall oder Geschäftsbereich starten, und das in weniger als sechs Monaten - langsam starten und später skalieren ",,,,,,,,,,,,,,
+basically we start something slow and scale it over a period of time.",Volle / Restliche Implementierung ,<6,-,"Man muss nicht gleich das gesamte unternehmensweite Datenmodell auf einmal umsetzen. Stattdessen kann man gezielt mit einem konkreten Anwendungsfall oder Geschäftsbereich starten, und das in weniger als sechs Monaten - langsam starten und später skalieren ",,,,,,,,,,,,,,
 15,Data Manager,IT Services,Externe Firma,"I've often seen that you can do the whole thing within six months. The data model, the even
 implementation of tools, everything can be done in six months, but limited use cases, if you're
 doing the enterprise part. That's complex, right?",Volle / Restliche Implementierung ,6,-,Alles kann in 6 Monate gemacht werden mit limitierten anzahl Use cases ,,,,,,,,,,,,,,
@@ -205,8 +205,8 @@ volle Adaption: 2-3 Jahre ",,,,,,,,,,,,,,
 20,CEO,Beratungsfirma,Beratung,"Wir hatten schon Beispiele, wo es innerhalb von ein paar Wochen erste Resultate zeigen
 konnte. Andere, wo es 2, 3, 4 Jahre gedauert hat. Ich denke aber nicht, dass es ein Anfangs-
 oder Endpunkt hat, sondern es ist ein Prozess. Es kann gar nie fertig sein. Du musst immer,
-wenn du ein System am entwickeln bist, nebenzu, deinen Datenkatalog neu definieren.",Volle / Restliche Implementierung ,0.5,48,"Aufwand kann von ein paar Wochen - mehreren Jahren sein, es ist ein unlimitierter Prozess ",,,,,,,,,,,,,,
-21,Senior Datra Product Manger,Agrarindustrie,Externe Firma,"Also bei Agrarindustrie, da hat es bei Databricks, die Integration ist super, das dauert zwei
+wenn du ein System am entwickeln bist, nebenzu, deinen Datenkatalog neu definieren.",Volle / Restliche Implementierung ,0.5,"2,3,4","Aufwand kann von ein paar Wochen - mehreren Jahren sein, es ist ein unlimitierter Prozess ",,,,,,,,,,,,,,
+21,Senior Datra Product Manger,Agrarindustrie,Externe Firma,"Also bei der Agrarindustrie, da hat es bei Databricks, die Integration ist super, das dauert zwei
 Wochen, da kann man sich das anschauen. Die technische Komponente ist nicht das Thema,
 sondern das zu verankern im Management, dass das wichtig ist und dass das gebraucht wird
 und warum und denen zu erklären, warum das wichtig ist. Also das ist die generelle
@@ -227,7 +227,7 @@ gedauert, wo wir mit den Anbietern einen Einkaufsprozess durchlaufen sind, wo wi
 Angebote gemacht haben, wo wir uns das angeschaut haben.",Vorarbeit ,6,-,Aussortierung Anbieter/Alternative: 6 Monate ,,,,,,,,,,,,,,
 6,Data Manager,Versicherungsfirma,Externe Firma,"Und da alle fanden es cool, alle fanden es super. Also quasi in Anführungsstrichen im POC
 haben wir so einen ersten Beweis eines potenziellen Values gehabt. Und dann haben wir uns
-entschieden, entsprechend Collibra zu kaufen.",First Value ,18,-,erster sihtbarer Value nach ca 1.5 Jahren,,,,,,,,,,,,,,
+entschieden, entsprechend Collibra zu kaufen.",First Value ,18,-,erster sichtbarer Value nach ca 1.5 Jahren,,,,,,,,,,,,,,
 6,Data Manager,Versicherungsfirma,Externe Firma,"Wir sind dann, ja, dann hast du tatsächlich die große Frage, schön, du hast jetzt
 irgendeinen Service gekauft, du hast jetzt irgendeine Plattform, eine leere Plattform. Wie
 gehst du jetzt vor, wie machst du das? Da haben wir dann die Entscheidung getroffen, okay,
@@ -267,7 +267,7 @@ Vor implementierung: Monate
 ",,,,,,,,,,,,,,
 7,Data Architect,Versicherungsfirma,Externe Firma," the POCs then the procurement negotiations all
 of that take time to onboard our software in the enterprise landscape and once the
-application is available then you start your actual implementation which takes about months.",Volle / Restliche Implementierung ,6,-,onborading software in Unternehmenslandschaft (technisch) ,,,,,,,,,,,,,,
+application is available then you start your actual implementation which takes about months.",Volle / Restliche Implementierung ,6,-,onborading Software in Unternehmenslandschaft (technisch) ,,,,,,,,,,,,,,
 7,Data Architect,Versicherungsfirma,Externe Firma,"So from the business point of view when the discussion is started to create such a enterprise
 data model or the entire data catalog until they really see something on production it is always
 in months and not in days",Vorarbeit ,2,-,"Bis spezifische Implemenierung geschieht, dauert es immer Monate ",,,,,,,,,,,,,,
@@ -293,9 +293,9 @@ User onboarden, mindestens ein halbes Jahr, eigentlich eher ein Jahr bis anderth
 30,Head of Community,IT Services,EDM / EDC Anbieter,"Naja, die Frage ist da, was du als Quick Win definierst, wenn du nur sagst, wir wollen
 irgendwie 100 User da drin haben, die mindestens einmal wiedergekommen sind, dann
 kannst du das in ein, zwei Monaten darstellen, wenn du genug Daten da hast und die
-Mehrwert sehen.",First Value ,1,2,Quick Win: 1.2 Moante wenn genug Daten - kommt auf Definition Quick Win an ,,,,,,,,,,,,,,
+Mehrwert sehen.",First Value ,1,2, 1.2 Moante wenn genug Daten - kommt auf Definition Quick Win an ,,,,,,,,,,,,,,
 30,Head of Community,IT Services,EDM / EDC Anbieter,"Wenn du jetzt aber sagst, ich möchte irgendwie die Daten in Analytics Use
 Cases umgesetzt haben, im Sinne von den ersten, den zweiten, den dritten, dann wirst du
 wahrscheinlich an den Use Cases hängen und die, selbst wenn die irgendwie in Sprints
 vorgehen, werden die ersten Benefits frühestens in drei, vier, fünf Monaten sich auszahlen,
-also knapp ein halbes Jahr.",First Value ,3,5,Quick Win: Daten in Analytics Use Cases umsetzen.. Frühstens in 3-5 Monaten,,,,,,,,,,,,,,
+also knapp ein halbes Jahr.",First Value ,3,5,Daten in Analytics Use Cases umsetzen.. Frühstens in 3-5 Monaten,,,,,,,,,,,,,,
